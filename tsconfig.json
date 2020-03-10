@@ -1,0 +1,9 @@
+{
+  "extends": "@skypilot/toolchain/configs/tsconfig.main.json",
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
