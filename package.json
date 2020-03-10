@@ -26,15 +26,13 @@
   "scripts": {
     "all-ci-checks": "yarn run all-cq-checks && yarn run build",
     "all-cq-checks": "yarn run typecheck && yarn run lint --quiet && yarn test",
-    "build": "rm -rf lib && yarn run compile-ts",
+    "build": "echo 'No build step. Skipping.'",
     "ci": "yarn run all-ci-checks",
-    "compile-ts": "babel ./src --out-dir ./lib --extensions .ts --ignore '**/__tests__/*' --ignore '**/*.d.ts' && yarn run generate-typings",
+    "compile-ts": "babel ./src --out-dir ./lib --extensions .ts --ignore '**/__tests__/*' --ignore '**/*.d.ts'",
     "cq": "yarn run all-cq-checks",
     "dev": "live-server --port=4000 public",
-    "generate-typings": "tsc --project tsconfig.generate-typings.json",
     "lint": "eslint --cache '**/*.{js,ts}'",
-    "prepublishOnly": "yarn run typecheck && yarn run lint --quiet && yarn test && yarn run build",
-    "publish:default": "yarn publish --non-interactive",
+    "publish:default": "echo 'No publication step. Skipping.'",
     "tc": "yarn run typecheck",
     "test": "jest",
     "typecheck": "tsc"
