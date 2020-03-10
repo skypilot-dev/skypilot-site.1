@@ -1,0 +1,16 @@
+# These values override the settings in
+# https://github.com/skypilotcc/quick-release/blob/master/src/scripts/quick-release.defaults.yaml
+version: 1
+bot:
+  # These values are used to sign commits & tags in GitHub Actions workflows
+  name: 'SkyPilot Bot'
+  email: 'bot@skypilot.dev'
+release:
+  # access = 'public' or 'restricted'
+  access: 'restricted'
+  publish: false
+prerelease:
+  access: 'restricted'
+  publish: false
+code-check:
+  build: false
