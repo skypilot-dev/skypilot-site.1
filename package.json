@@ -4,5 +4,29 @@
   },
   "scripts": {
     "dev": "live-server --port=4000 public"
-  }
+  },
+  "name": "skypilot-site",
+  "version": "0.1.0",
+  "description": "SkyPilot website",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/skypilotcc/skypilot-site.git"
+  },
+  "author": {
+    "name": "Camilla Thorsen",
+    "email": "camilla@thorsen.dev"
+  },
+  "contributors": [
+    {
+      "name": "William Thorsen",
+      "email": "william@thorsen.dev"
+    }
+  ],
+  "license": "UNLICENSED",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/skypilotcc/skypilot-site/issues"
+  },
+  "homepage": "https://github.com/skypilotcc/skypilot-site#readme"
 }
