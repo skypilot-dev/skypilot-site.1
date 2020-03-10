@@ -1,3 +1,57 @@
-/.idea/
-/node_modules/
+# Compiled & transpiled files
+/lib/
 
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.sw?
+
+# ESLint
+.eslintcache
+
+# Local-only files
+.env.local
+.env.*.local
+/local/
+
+# Node
+/node_modules/
+.lock-wscript
+.node_repl_history
+.npm
+npm-debug.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Runtime data
+/pids/
+*.pid
+*.seed
+
+# Temporary files
+/tmp/
+*.tmp
+*.tmp.*
+
+# Tests & coverage
+.nyc_output/
+/coverage/
+lib-cov/
+
+# Yarn
+yarn-debug.log*
+yarn-error.log*
+.yarn/cache
+.yarn/unplugged
+
+# Don't exclude these if Yarn Zero-Installs are being used
+/.pnp/
+/.yarn/build-state.yml
+.pnp.*
+
+# Allow .gitkeep to prevent otherwise empty directories from being deleted
+!.gitkeep
