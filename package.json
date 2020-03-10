@@ -1,18 +1,17 @@
 {
-  "devDependencies": {
-    "live-server": "^1.2.1"
-  },
-  "scripts": {
-    "dev": "live-server --port=4000 public"
-  },
   "name": "skypilot-site",
   "version": "0.1.0",
+  "private": true,
   "description": "SkyPilot website",
-  "main": "index.js",
+  "homepage": "https://github.com/skypilotcc/skypilot-site#readme",
+  "bugs": {
+    "url": "https://github.com/skypilotcc/skypilot-site/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/skypilotcc/skypilot-site.git"
   },
+  "license": "UNLICENSED",
   "author": {
     "name": "Camilla Thorsen",
     "email": "camilla@thorsen.dev"
@@ -23,10 +22,11 @@
       "email": "william@thorsen.dev"
     }
   ],
-  "license": "UNLICENSED",
-  "private": true,
-  "bugs": {
-    "url": "https://github.com/skypilotcc/skypilot-site/issues"
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server --port=4000 public"
   },
-  "homepage": "https://github.com/skypilotcc/skypilot-site#readme"
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
 }
