@@ -38,7 +38,7 @@
     "typecheck": "tsc"
   },
   "devDependencies": {
-    "@skypilot/toolchain": "^3.5.1",
+    "@skypilot/toolchain": "^3.5.2",
     "live-server": "^1.2.1"
   },
   "publishConfig": {
