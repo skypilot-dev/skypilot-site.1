@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="304" height="352">
+	<rect width="304" height="352" style="fill:white"/>
+	<path style="fill:none;stroke:#000000;stroke-width:3;stroke-linejoin:round" d="M2,88.602540 L152,2 302,88.602540 v173.215081 L152,350.410161 2,261.807621 z"/>
+</svg>

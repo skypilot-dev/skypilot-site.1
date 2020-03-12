@@ -1,5 +1,9 @@
 /*
-Dark blue color: #---
+Dark blue color: #203b61
+Light blue color: #678198
+Light grey: #f0e9d9
+Sand: #edd8b9
+Darker grey: #ccc9c4
  */
 
 /* ----------------------------------------------------------- */
@@ -35,6 +39,10 @@ body {
   visibility: hidden;
 }
 
+div {
+  border: 1px dotted red;
+}
+
 /* ----------------------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ----------------------------------------------------------- */
@@ -45,20 +53,363 @@ body {
 }
 
 section {
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
 .box {
   padding: 1%;
-  border: 1px solid #555;
 }
 
 /* ----- HEADINGS ----- */
+h1,
+h2,
+h3,
+h4{
+  margin: 0;
+  line-height: 120%;
+}
+
+h1 {
+  margin-bottom: 35px;
+  color: #fff;
+  font-size: 240%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+h2 {
+  text-align: center;
+  font-size: 180%;
+  word-spacing: 4px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+h3 {
+  color: #333;
+  font-size: 100%;
+}
+
+h4 {
+  color: #777;
+  font-size: 70%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  padding: 10px 0 25px 0;
+  font-weight: 400;
+}
+h5 {
+  margin: 10px 0;
+  color: #E6AD0A;
+  font-size: 70%;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+}
+
+h6 {
+  color: #2a7dad;
+  font-size: 60%;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+}
+
 /* ----- PARAGRAPHS ----- */
 /* ----- ICONS ----- */
+/* ----- HEXAGONS ----- */
+
+.hexagon {
+  position:relative;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.hexagon img {
+  height: 70px;
+  width: auto;
+}
+
+.hexagon ion-icon {
+  font-size: 160%;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #284b7b;
+}
 /* ----- LINKS ----- */
+
 /* ----- BUTTONS ----- */
+.btn:link,
+.btn:visited,
+input[type=submit]{
+  display: inline-block;
+  padding: 15px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border: 1px solid #2a7dad;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+  text-transform: uppercase;
+  font-size: 70%;
+  letter-spacing: 1px;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]{
+  background-color: #2a7dad;
+  border: 1px solid #2a7dad;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+  background-color: #678198;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  border-color: #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #678198;
+  color: #fff;
+}
 
 /* ----------------------------------------------------------- */
 /* HEADER */
 /* ----------------------------------------------------------- */
+header {
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(https://res.cloudinary.com/db8eidwqd/image/upload/v1583903789/splash-banner.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  color: #f7f7f7;
+  position: relative;
+  min-height: 600px;
+  margin: 2%;
+}
+
+.logo {
+  height: 30px;
+  width: auto;
+  float: left;
+}
+
+.wordmark {
+  text-transform: uppercase;
+  font-size: 90%;
+  padding-left: 7px;
+}
+
+nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  padding: 1% 2%;
+}
+
+.hero-text-box {
+  position: absolute;
+  padding: 2%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero__social-icons {
+  float: right;
+  font-size: 120%;
+  position: absolute;
+  top: 25%;
+  right: 2%;
+}
+
+.hero__social-icons div:first-child {
+  padding-bottom: 10px;
+}
+
+.hero__social-icons div:last-child {
+  padding-top: 10px;
+}
+
+.hero__long-copy {
+  margin-bottom: 40px;
+}
+
+.hero__scroll {
+  padding: 0 15px;
+  text-align: center;
+  position: absolute;
+  display: block;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.hero__scroll a {
+  color: #fff;
+  font-size: 80%;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.chevron {
+  color: #fff;
+  font-size: 150%;
+}
+
+.hero__scroll a:hover {
+  background-color: rgba(255,255,255,0.3);
+}
+
+/* Main navigation */
+.main-nav {
+  float: right;
+  list-style: none;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 70%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+  padding: 8px 0;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #edd8b9;
+}
+
+
+/* Sticky navigation */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 1.0);
+  box-shadow: 0 2px 2px #efefef;
+}
+
+/* ----------------------------------------------------------- */
+/* SERVICES SECTION */
+/* ----------------------------------------------------------- */
+
+.section-services {
+   text-align: center;
+   padding: 60px 10%;
+ }
+
+.section-services .row {
+  margin-bottom: 1%;
+}
+
+.services__card {
+  padding: 1% 3%;
+}
+
+.box p {
+  font-size: 90%;
+  line-height: 145%;
+}
+
+/* ----------------------------------------------------------- */
+/* HIGHLIGHT SECTION */
+/* ----------------------------------------------------------- */
+
+.section-highlight {
+  background-color: #f3f3f3;
+  padding: 0;
+  position: relative;
+}
+
+.section-highlight .row {
+  margin-right: 0;
+}
+
+.section-highlight h2 {
+  text-align: start;
+  margin-bottom: 0;
+}
+
+.highlight__image {
+  margin: 0;
+  float: right;
+  line-height: 0;
+}
+
+.highlight__image img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.highlight__text {
+  padding: 40px 7% 40px 6%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 31%;
+  transform: translate(-50%, -50%);
+  line-height: 150%;
+  max-width: 600px;
+}
+
+/* ----------------------------------------------------------- */
+/* TEAM SECTION */
+/* ----------------------------------------------------------- */
+
+.section-team .row {
+
+}
+
+.hex-profile-photo {
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  height: 300px;
+  width: 280px;
+  float: right;
+  margin: 0 70px 0 0;
+}
+
+.photo2 {
+  float: left;
+  margin: 0 0 0 70px;
+}
+
+.section-team__text {
+  padding: 0 70px;
+}
+
+.section-team__text--profile2 {
+  text-align: right;
+}
+
+.section-team__profile2 {
+  margin-top: 70px;
+}

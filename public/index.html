@@ -12,13 +12,15 @@
 
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap"
         rel="stylesheet">
+
   <title>SkyPilot</title>
 </head>
 <body>
 <header>
-  <nav class="box">
-    <div class="box row">
-      <img alt="SkyPilot logo" src="images/logo.svg">
+  <nav>
+    <div class="row">
+      <img alt="SkyPilot logo" src="images/SkyPilot-logo-white-v2.svg" class="logo">
+      <a class="wordmark">SkyPilot</a>
       <ul class="main-nav">
         <li><a href="#">About</a></li>
         <li><a href="#">Portfolio</a></li>
@@ -26,32 +28,41 @@
       </ul>
     </div>
   </nav>
-  <div class="box header--banner">
-    <div class="row" style="border-color: red">
-      <div class="col span-4-of-5 box">
+  <div class="hero-text-box">
+    <div class="row">
+      <div class="col span-11-of-12">
+        <h5>SkyPilot Software Development</h5>
         <h1>Harness the power of the cloud</h1>
-        <p>
+        <div class="hero__long-copy">
           With reliable, high-performance online services and beautiful websites that provide the
           ultimate in user experience
-        </p>
-        <a class="btn btn-ghost" href="#">Contact us</a>
+        </div>
+        <a class="btn btn-full" href="#">Contact us</a>
       </div>
-      <div class="box col span-1-of-8">
-        Icons
+      <div class="hero__social-icons">
+        <div><ion-icon name="logo-github"></ion-icon></div>
+        <div><ion-icon name="logo-linkedin"></ion-icon></div>
+        <div><ion-icon name="logo-twitter"></ion-icon></div>
       </div>
     </div>
-    <div class="box row">
-      Arrow
-    </div>
+  </div>
+  <div class="hero__scroll">
+    <a href="#">
+      <div>Learn more</div>
+      <div><ion-icon name="chevron-down-outline" class="chevron"></ion-icon></div>
+    </a>
   </div>
 </header>
 
-<section class="box">
-  <div class="box row">
+<section class="section-services">
+  <div class="row">
     <h2>Our services</h2>
     <div class="row">
       <div class="box col span-1-of-3">
-        Icon
+        <div class="hexagon">
+          <img alt="Hexagon icon" src="images/hexagon.svg">
+          <ion-icon name="body"></ion-icon>
+        </div>
         <h3>User-experience design</h3>
         <p>
           User experience is the most important&mdash;but most neglected&mdash;aspect of web
@@ -59,7 +70,10 @@
         </p>
       </div>
       <div class="box col span-1-of-3">
-        Icon
+        <div class="hexagon">
+          <img alt="Hexagon icon" src="images/hexagon.svg">
+          <ion-icon name="desktop"></ion-icon>
+        </div>
         <h3>User-interface design</h3>
         <p>
           The shortest distance between you and your users is the interface. Don&rsquo;t make
@@ -67,7 +81,10 @@
         </p>
       </div>
       <div class="box col span-1-of-3">
-        Icon
+        <div class="hexagon">
+          <img alt="Hexagon icon" src="images/hexagon.svg">
+          <ion-icon name="code-slash"></ion-icon>
+        </div>
         <h3>Front-end development</h3>
         <p>
           We use the Vue.js framework to create an interactive, responsive, effortless interface
@@ -77,7 +94,10 @@
     </div>
     <div class="row">
       <div class="box col span-1-of-3">
-        Icon
+        <div class="hexagon">
+          <img alt="Hexagon icon" src="images/hexagon.svg">
+          <ion-icon name="server"></ion-icon>
+        </div>
         <h3>Back-end development</h3>
         <p>
           We make magic behind the curtain. But wat looks like magic is actually well architected,
@@ -85,14 +105,20 @@
         </p>
       </div>
       <div class="box col span-1-of-3">
-        Icon
+        <div class="hexagon">
+          <img alt="Hexagon icon" src="images/hexagon.svg">
+          <ion-icon name="cog"></ion-icon>
+        </div>
         <h3>DevOps</h3>
         <p>
           When everything is automated, nothing is left to chance
         </p>
       </div>
-      <div class="box col span-1-of-3">
-        Icon
+      <div class="services__card col span-1-of-3">
+        <div class="hexagon">
+          <img alt="Hexagon icon" src="images/hexagon.svg">
+          <ion-icon name="people"></ion-icon>
+        </div>
         <h3>Project management</h3>
         <p>
           Unglamorous but essential. Our battle-tested project-management skills help keep a project
@@ -103,9 +129,8 @@
   </div>
 </section>
 
-<section class="box">
-  <div class="row">
-    <div class="box col span-3-of-5">
+<section class="section-highlight clearfix">
+    <div class="col span-3-of-5 highlight__text">
       <h2>What makes us different?</h2>
       <h5>Competence. Curiosity. Commitment</h5>
       <p>
@@ -114,19 +139,21 @@
         best at what we do.
       </p>
     </div>
-    <div class="box col span-2-of-5">Image</div>
-  </div>
+    <div class="col span-2-of-5 highlight__image">
+      <img src="https://res.cloudinary.com/db8eidwqd/image/upload/v1583984463/office.jpg" alt="Laptop on a desk">
+    </div>
 </section>
 
-<section class="box">
+<section class="section-team">
   <div class="row">
+
     <h2>Meet your pilots</h2>
   </div>
   <div class="row">
     <div class="col span-1-of-2">
-      Photo William
+      <img src="https://res.cloudinary.com/db8eidwqd/image/upload/v1583986892/IMG_1041_nnc3gr.jpg" alt="William's team photo"class="hex-profile-photo">
     </div>
-    <div class="col span-1-of-2">
+    <div class="col span-1-of-2  ">
       <h3>William Thorsen</h3>
       <h5>Software developer</h5>
       <p>
@@ -138,8 +165,8 @@
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col span-1-of-2">
+  <div class="row section-team__profile2">
+    <div class="col span-1-of-2 section-team__text section-team__text--profile2">
       <h3>Camilla Thorsen</h3>
       <h5>Software developer</h5>
       <p>
@@ -153,12 +180,16 @@
       </div>
     </div>
     <div class="col span-1-of-2">
-      Photo Camilla
+      <img src="https://res.cloudinary.com/db8eidwqd/image/upload/v1583987233/IMG_1227_ofawhf.jpg" alt="Camilla's team photo" class="hex-profile-photo photo2">
     </div>
   </div>
 </section>
 
 <section class="box">
+  <h3>H3 Heading</h3>
+  <h4>H4 Heading</h4>
+  <h5>H5 Heading</h5>
+  <h6>H6 Heading</h6>
   <div class="box">
     Image 1
   </div>
@@ -309,5 +340,6 @@
     Back to top
   </div>
 </footer>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
 </html>
