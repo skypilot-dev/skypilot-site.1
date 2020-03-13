@@ -39,9 +39,13 @@ body {
   visibility: hidden;
 }
 
-div {
-  border: 1px dotted red;
+.flexbox {
+  display: flex;
 }
+
+/*div {*/
+/*  border: 1px dotted red;*/
+/*}*/
 
 /* ----------------------------------------------------------- */
 /* REUSABLE COMPONENTS */
@@ -435,4 +439,77 @@ nav {
 .team__social-icons {
   font-size: 120%;
   color: #333;
+}
+
+/* ----------------------------------------------------------- */
+/* PORTFOLIO SECTION */
+/* ----------------------------------------------------------- */
+
+.section-portfolio {
+  align-items: stretch;
+}
+
+.box-image-1 {
+  margin-bottom: 15px;
+}
+
+.box-image-2 {
+  margin: 1% 0 1% 1.6%;
+}
+
+.box-image-3 {
+  margin-bottom: 15px;
+}
+
+.box-image-4 {
+  margin: 0;
+}
+
+.box-text {
+  flex-grow: 1;
+  background-color: #555555;
+  color: white;
+  padding: 15%;
+  text-align: right;
+}
+
+.box-text p {
+  color: #cdcdcd;
+  font-size: 90%;
+}
+
+.box-text h2 {
+  text-align: right;
+  padding-top: 0;
+}
+
+.portfolio-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+  line-height: 0;
+}
+
+.portfolio-photo img {
+  opacity: 0.95;
+  width:100%;
+  height: auto;
+  transition: opacity 0.5s;
+}
+
+.portfolio-photo--stretch {
+  height: 100%;
+}
+
+.portfolio-photo--stretch img {
+  height: 100%;
+}
+
+.portfolio-photo img:hover {
+  opacity: 1;
+}
+
+.section-portfolio .flexbox {
+  flex-direction: column;
 }
