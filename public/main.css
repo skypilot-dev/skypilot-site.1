@@ -53,7 +53,7 @@ div {
 }
 
 section {
-  padding: 60px 0;
+  padding: 70px 0;
 }
 
 .box {
@@ -88,7 +88,7 @@ h2 {
 
 h3 {
   color: #333;
-  font-size: 100%;
+  font-size: 120%;
 }
 
 h4 {
@@ -384,8 +384,8 @@ nav {
 /* TEAM SECTION */
 /* ----------------------------------------------------------- */
 
-.section-team .row {
-
+.section-team div h2 {
+  padding-bottom: 20px;
 }
 
 .hex-profile-photo {
@@ -406,10 +406,33 @@ nav {
   padding: 0 70px;
 }
 
+.section-team__profile1 p,
+.section-team__profile2 p{
+  padding: 20px 0;
+}
+
+.section-team__profile1 h6,
+.section-team__profile2 h6{
+  padding-bottom: 15px;
+}
+
+.section-team__profile2 {
+  margin-top: 80px;
+}
+
+.section-team__text--profile1 {
+  margin-top: 20px;
+}
+
+.section-team__text--profile2 {
+  margin: 20px 0;
+}
+
 .section-team__text--profile2 {
   text-align: right;
 }
 
-.section-team__profile2 {
-  margin-top: 70px;
+.team__social-icons {
+  font-size: 120%;
+  color: #333;
 }
