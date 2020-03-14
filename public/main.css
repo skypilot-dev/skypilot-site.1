@@ -334,16 +334,17 @@ nav .row {
  }
 
 .section-services .row {
-  margin-bottom: 1%;
+  margin-bottom: 3%;
 }
 
 .services__card {
   padding: 1% 3%;
 }
 
-.box p {
+.section-services p {
   font-size: 90%;
   line-height: 145%;
+  padding-top: 15px;
 }
 
 /* ----------------------------------------------------------- */
@@ -354,7 +355,7 @@ nav .row {
   background-color: #f3f3f3;
   padding: 0;
   position: relative;
-  margin: 2%;
+  margin: 0 2% 2% 2%;
 }
 
 .section-highlight .row {
