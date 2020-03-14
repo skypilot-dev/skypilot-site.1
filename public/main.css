@@ -688,6 +688,7 @@ nav .row {
   font-size: 85%;
   font-weight: 300;
   padding: 5px;
+  resize: none;
 }
 
 .contact-form textarea {
