@@ -203,7 +203,7 @@ header {
   background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(https://res.cloudinary.com/db8eidwqd/image/upload/v1583903789/splash-banner.jpg);
   background-size: cover;
   background-position: center;
-  height: 85vh;
+  height: 70vh;
   color: #f7f7f7;
   position: relative;
   min-height: 600px;
