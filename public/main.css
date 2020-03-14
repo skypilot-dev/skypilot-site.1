@@ -636,7 +636,6 @@ nav .row {
 /* CONTACT US SECTION */
 /* ----------------------------------------------------------- */
 .section-contact {
-  border: 1px dotted blue;
   background-image: url(https://res.cloudinary.com/db8eidwqd/image/upload/v1584158767/contact-banner.jpg);
   background-size: cover;
   background-position: center;
@@ -699,7 +698,7 @@ nav .row {
 footer {
   background-color: #203B60;
   color: #b5b5b5;
-  padding-top: 60px;
+  padding-top: 100px;
   margin: 0 2% 2% 2%;
 }
 
