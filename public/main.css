@@ -121,6 +121,10 @@ h6 {
 }
 
 /* ----- PARAGRAPHS ----- */
+
+p {
+  line-height: 140%;
+}
 /* ----- ICONS ----- */
 /* ----- HEXAGONS ----- */
 
@@ -614,7 +618,6 @@ nav .row {
 }
 
 .process__step p {
-  font-size: 80%;
   padding-top: 10px;
 }
 
@@ -683,7 +686,7 @@ nav .row {
 .contact-form input,
 .contact-form textarea {
   margin-bottom: 20px;
-  font-size: 80%;
+  font-size: 85%;
   font-weight: 300;
   padding: 5px;
 }
