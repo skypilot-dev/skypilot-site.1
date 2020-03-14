@@ -43,9 +43,9 @@ body {
   display: flex;
 }
 
-/*div {*/
-/*  border: 1px dotted red;*/
-/*}*/
+div {
+  border: 1px dotted red;
+}
 
 /* ----------------------------------------------------------- */
 /* REUSABLE COMPONENTS */
@@ -520,12 +520,12 @@ nav {
 /* PROCESS SECTION */
 /* ----------------------------------------------------------- */
 
-.section-process{
+.section-process {
   position: relative;
   padding: 0;
   text-align: center;
-  background-color: pink;
 }
+
 .process__foreground {
   position: relative;
   z-index: 1;
@@ -539,7 +539,7 @@ nav {
   position: absolute;
   z-index: auto;
   width: 100%;
-  height: 100%;
+  height: 90%;
   list-style: none;
   padding:0 10%;
 }
@@ -552,54 +552,81 @@ nav {
   display: block;
   float: left;
   width: 25%;
-  border: 5px solid #555;
-  height: 300px;
-  background-color: yellow;
+  border: 2px solid #555;
+  height: 350px;
 }
 .process__background ul li:nth-child(1),
-.process__background ul li:nth-child(8) {
+.process__background ul li:nth-child(9) {
   border: none;
+}
+
+.process__background ul li:nth-child(1),
+.process__background ul li:nth-child(2),
+.process__background ul li:nth-child(3),
+.process__background ul li:nth-child(4),
+.process__background ul li:nth-child(5) {
+  width: 20%;
 }
 
 .process__background ul li:nth-child(2),
 .process__background ul li:nth-child(3),
-.process__background ul li:nth-child(7) {
+.process__background ul li:nth-child(8) {
   border-left: none;
   border-right: none;
   border-bottom: none;
 }
 
-.process__background ul li:nth-child(4) {
+.process__background ul li:nth-child(5) {
   border-radius: 0 50px 50px 0;
   border-left: none;
 }
-.process__background ul li:nth-child(5) {
+.process__background ul li:nth-child(6) {
   border-radius: 50px 0 0 50px;
   border-right: none;
 }
-.process__background ul li:nth-child(6) {
+.process__background ul li:nth-child(7),
+.process__background ul li:nth-child(4) {
   border-left: none;
   border-right: none;
 }
 
-.process__background ul li:nth-child(5),
+.process__background ul li:nth-child(8),
 .process__background ul li:nth-child(6),
 .process__background ul li:nth-child(7) {
-  margin-top: -5px;
+  margin-top: -2px;
 }
 
 /* Process text content */
-
 .process__step {
   margin: 0 0 20px 0;
-  width: 32.26%;
+  width: 33.3%;
+  height: 326px;
   float: left;
   display: block;
-  line-height: 145%;
+  line-height: 125%;
+  padding: 17px 3% 10px 3%;
 }
 
 .process__step p {
   font-size: 80%;
+  padding-top: 10px;
+}
+
+.process__step:nth-of-type(1),
+.process__step:nth-of-type(4) {
+  padding-left: 0;
+}
+
+.process__step:nth-of-type(3),
+.process__step:nth-of-type(6) {
+  padding-right: 0;
+}
+
+.process__step:nth-of-type(2),
+.process__step:nth-of-type(5),
+.process__step:nth-of-type(7) {
+  padding-left: 1.5%;
+  padding-right: 1.5%;
 }
 
 /* ----------------------------------------------------------- */
