@@ -106,18 +106,16 @@ h4 {
 h5 {
   margin: 10px 0;
   color: #E6AD0A;
-  font-size: 70%;
-  text-transform: uppercase;
-  word-spacing: 3px;
+  font-size: 80%;
   letter-spacing: 1px;
+  word-spacing: 3px;
 }
 
 h6 {
-  color: #2a7dad;
-  font-size: 60%;
-  text-transform: uppercase;
+  color: #E6AD0A;
+  font-size: 80%;
+  margin: 10px 0;
   word-spacing: 3px;
-  letter-spacing: 1px;
 }
 
 /* ----- PARAGRAPHS ----- */
