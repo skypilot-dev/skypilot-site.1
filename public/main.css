@@ -155,8 +155,7 @@ input[type=submit]{
   text-decoration: none;
   border: 1px solid #2a7dad;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
-  text-transform: uppercase;
-  font-size: 70%;
+  font-size: 80%;
   letter-spacing: 1px;
 }
 
@@ -746,14 +745,13 @@ footer .flexbox {
 
 .footer__nav li {
   list-style: none;
-  font-size: 60%;
+  font-size: 70%;
 }
 
 .footer__nav li a:link,
 .footer__nav li a:visited {
   color: #ebebeb;
   text-decoration: none;
-  text-transform: uppercase;
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.2s;
   line-height: 200%;
