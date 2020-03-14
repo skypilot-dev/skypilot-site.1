@@ -199,7 +199,7 @@ header {
   background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(https://res.cloudinary.com/db8eidwqd/image/upload/v1583903789/splash-banner.jpg);
   background-size: cover;
   background-position: center;
-  height: 94vh;
+  height: 93vh;
   color: #f7f7f7;
   position: relative;
   min-height: 600px;
@@ -214,8 +214,10 @@ header {
 
 .wordmark {
   text-transform: uppercase;
+  display: inline-block;
   font-size: 90%;
   padding-left: 7px;
+  padding-top: 5px;
 }
 
 nav {
