@@ -203,7 +203,7 @@ header {
   background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(https://res.cloudinary.com/db8eidwqd/image/upload/v1583903789/splash-banner.jpg);
   background-size: cover;
   background-position: center;
-  height: 93vh;
+  height: 85vh;
   color: #f7f7f7;
   position: relative;
   min-height: 600px;
@@ -645,7 +645,7 @@ nav .row {
   background-image: url(https://res.cloudinary.com/db8eidwqd/image/upload/v1584158767/contact-banner.jpg);
   background-size: cover;
   background-position: center;
-  height: 45vh;
+  height: 400px;
   background-attachment: fixed;
   margin: 80px 2% 0 2%;
   position: relative;
