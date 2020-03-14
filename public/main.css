@@ -43,9 +43,9 @@ body {
   display: flex;
 }
 
-div {
-  border: 1px dotted red;
-}
+/*div {*/
+/*  border: 1px dotted red;*/
+/*}*/
 
 /* ----------------------------------------------------------- */
 /* REUSABLE COMPONENTS */
@@ -535,7 +535,6 @@ nav {
 
 /* Process S line */
 .process__background {
-  border: 5px dotted blue;
   position: absolute;
   z-index: auto;
   width: 100%;
@@ -632,7 +631,64 @@ nav {
 /* ----------------------------------------------------------- */
 /* CONTACT US SECTION */
 /* ----------------------------------------------------------- */
+.section-contact {
+  border: 1px dotted blue;
+  background-image: url(https://res.cloudinary.com/db8eidwqd/image/upload/v1584158767/contact-banner.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 45vh;
+  background-attachment: fixed;
+  margin: 80px 2% 0 2%;
+  position: relative;
+}
 
+/* Contact form */
+.contact__card {
+  position: absolute;
+  top: 50%;
+  left: 68%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  width: 500px;
+  background-color: #f3f3f3;
+  border: 1px solid #787878;
+  padding: 3% 4%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: stretch;
+}
+
+.contact-form h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  line-height: 100%;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-size: 90%;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 20px;
+  font-size: 80%;
+  font-weight: 300;
+  padding: 5px;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+.contact-form div a.btn-full {
+  float: right;
+  margin-right: 0;
+}
 /* ----------------------------------------------------------- */
 /* FOOTER */
 /* ----------------------------------------------------------- */
@@ -640,7 +696,7 @@ footer {
   background-color: #203B60;
   color: #b5b5b5;
   padding-top: 60px;
-  margin: 2%;
+  margin: 0 2% 2% 2%;
 }
 
 .wordmark--footer {
