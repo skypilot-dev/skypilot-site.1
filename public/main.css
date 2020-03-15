@@ -636,6 +636,10 @@ nav .row {
   padding-right: 1.5%;
 }
 
+.process__step.iteration .hexagon ion-icon {
+  color: #E6AD0A;
+}
+
 /* ----------------------------------------------------------- */
 /* CONTACT US SECTION */
 /* ----------------------------------------------------------- */
