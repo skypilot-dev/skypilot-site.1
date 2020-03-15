@@ -1025,20 +1025,20 @@
   dependencies:
     type-detect "4.0.8"
 
-"@skypilot/babel-config-node-typescript@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@skypilot/babel-config-node-typescript/-/babel-config-node-typescript-0.1.1.tgz#06636cba539a821d0a424fb4d7b9436163c1889f"
-  integrity sha512-/DQGzERYQXBz0yNn1sHFBlaRuld0zh7C4HI4HmVKj56pv6rUHzgVjHHgVjtKcPZoy/zUoNev0fUHyFhRYHYS5Q==
-
-"@skypilot/eslint-config-typescript@^1.0.1":
+"@skypilot/babel-config-node-typescript@^1.0.0":
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@skypilot/eslint-config-typescript/-/eslint-config-typescript-1.0.1.tgz#9688788061e4b212a4db18d6c794d2eb4bb64c41"
-  integrity sha512-eTzaemMnn13a6NG3JGEHni0J104Za+2SQtTeL9yBhAq60KC6v9wObbxxznRoMkiGZwi5mizcKGctAHiMuP1EWw==
+  resolved "https://registry.yarnpkg.com/@skypilot/babel-config-node-typescript/-/babel-config-node-typescript-1.0.1.tgz#ba9e3285b6e51a505dfb436b157b2b6c194fdbcf"
+  integrity sha512-NjYG3QgR6kaKdHl5/Anmw5KND3WH7mUV1vaEeioKM8yNr1X4sVyr82/TjbPmsmjDrVyBTZJHI4w63sg9emwgNg==
 
-"@skypilot/toolchain@^3.5.2":
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/@skypilot/toolchain/-/toolchain-3.5.2.tgz#2744e72c33b1d6f64cc3fc2a4304c22045c234d7"
-  integrity sha512-v9gVFrTxqoTTioxgcJ/rQqdsVhF/paJekxW3NOa8R2opoxeZalXE7Jwh/HnqKFTifuTvKJl3j+VhS2Bl438vCA==
+"@skypilot/eslint-config-typescript@^1.0.3":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@skypilot/eslint-config-typescript/-/eslint-config-typescript-1.0.4.tgz#cb54793ebe7b7760081abcf958bf490990a4a84c"
+  integrity sha512-ZSXyAF8MiaF09feU9mPPqLGUfiM0GdMYv6D5Y+kttul4ZTIIOypO6Q9933PJp0Zy9A0W/yz4Zpa+TFuBUaZwRw==
+
+"@skypilot/toolchain@^3.5.8":
+  version "3.5.8"
+  resolved "https://registry.yarnpkg.com/@skypilot/toolchain/-/toolchain-3.5.8.tgz#0eba6a3d936e630eeacae7a59a0e8e13cfec1667"
+  integrity sha512-5s4LL9XtTwLmTSMiEJeN7sU/WQCMbZDqCcWpl+17FxrJ2yANYT1j9p5sMGAkdC+Gs92fpRd2I+KGei5K2aGK+g==
   dependencies:
     "@babel/cli" "^7.8.4"
     "@babel/core" "^7.8.7"
@@ -1049,10 +1049,10 @@
     "@babel/preset-env" "^7.8.7"
     "@babel/preset-typescript" "^7.8.3"
     "@babel/runtime" "^7.8.7"
-    "@skypilot/babel-config-node-typescript" "^0.1.1"
-    "@skypilot/eslint-config-typescript" "^1.0.1"
+    "@skypilot/babel-config-node-typescript" "^1.0.0"
+    "@skypilot/eslint-config-typescript" "^1.0.3"
     "@types/jest" "^25.1.4"
-    "@types/node" "^13.9.0"
+    "@types/node" "^13.9.1"
     "@typescript-eslint/eslint-plugin" "^2.23.0"
     "@typescript-eslint/parser" "^2.23.0"
     babel-jest "^25.1.0"
@@ -1142,10 +1142,10 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.4.tgz#38fd73ddfd9b55abb1e1b2ed578cb55bd7b7d339"
   integrity sha512-8+KAKzEvSUdeo+kmqnKrqgeE+LcA0tjYWFY7RPProVYwnqDjukzO+3b6dLD56rYX5TdWejnEOLJYOIeh4CXKuA==
 
-"@types/node@^13.9.0":
-  version "13.9.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.9.0.tgz#5b6ee7a77faacddd7de719017d0bc12f52f81589"
-  integrity sha512-0ARSQootUG1RljH2HncpsY2TJBfGQIKOOi7kxzUY6z54ePu/ZD+wJA8zI2Q6v8rol2qpG/rvqsReco8zNMPvhQ==
+"@types/node@^13.9.1":
+  version "13.9.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.9.1.tgz#96f606f8cd67fb018847d9b61e93997dabdefc72"
+  integrity sha512-E6M6N0blf/jiZx8Q3nb0vNaswQeEyn0XlupO+xN6DtJ6r6IT4nXrTry7zhIfYvFCl3/8Cu6WIysmUBKiqV0bqQ==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
