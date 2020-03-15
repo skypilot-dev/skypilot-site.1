@@ -616,6 +616,7 @@ nav .row {
 
 .process__step p {
   padding-top: 10px;
+  font-size: 80%;
 }
 
 .process__step:nth-of-type(1),
