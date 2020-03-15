@@ -425,8 +425,8 @@ nav .row {
 }
 
 .section-team__profile1 h6,
-.section-team__profile2 h6{
-  padding-bottom: 15px;
+.section-team__profile2 h6 {
+  margin-bottom: 0;
 }
 
 .section-team__profile2 {
