@@ -215,10 +215,11 @@ header {
 }
 
 .wordmark {
+  color: #fff;
   display: inline-block;
-  font-size: 90%;
+  font-size: 140%;
   padding-left: 7px;
-  padding-top: 5px;
+  padding-top: 0.05rem;
 }
 
 nav {
@@ -716,9 +717,11 @@ footer {
 }
 
 .wordmark--footer {
-  padding: 5px;
+  color: #fff;
   display: inline-block;
-  color: white;
+  font-size: 140%;
+  padding-left: 7px;
+  padding-top: 0.05rem;
 }
 
 .logo-row {
