@@ -1,4 +1,4 @@
-/* ---------------------- Screen width 768 to 1185 ---------------------- */
+/* ---------------------- Screen width 948 to 1185 ---------------------- */
 @media only screen and (max-width: 1185px) {
   body {font-size: 18px}
   .row {width: 100%;}
@@ -67,13 +67,81 @@
 }
 
 
-/* ---------------------- Screen width 481px to 947px ---------------------- */
+/* ---------------------- Screen width 768px to 947px ---------------------- */
 @media only screen and (max-width: 947px) {
+  h5 {
+    margin: 5px 0;
+  }
 
+  .highlight__image {
+    width: 40%;
+  }
+  .highlight__text {
+    padding: 40px 7% 40px 6%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+    line-height: 150%;
+    max-width: 600px;
+    width: 60%;
+  }
+  /* TEAM SECTION */
+  .hex-profile-photo {
+    margin: 0 30px 0 0;
+  }
+  .photo2 {
+    float: left;
+    margin: 0 0 0 30px;
+  }
+  .section-team__text {
+    padding: 0 40px;
+  }
+  .section-team__profile2 {
+    margin-top: 30px;
+  }
+
+  /* PORTFOLIO SECTION */
+  .section-portfolio {
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+  .box-image-1 {
+    width: 100%;
+    line-height: 0;
+    margin: 0 15px 0 0;
+  }
+  .box-image-2 {
+    width: calc(50% - 15px);
+    margin: 0 15px 0 0;
+  }
+  .section-portfolio .span-3-of-10:last-of-type {
+    width: 50%;
+    margin: 0;
+  }
+  .box-text {
+    padding: 7% 5%;
+    text-align: left;
+  }
+
+  .box-text h2 {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  .section-portfolio .flexbox {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  /* CONTACT SECTION */
+  .contact__card {
+
+    left: 60%;
 }
 
 
-/* ---------------------- Screen width 0px to 480px ---------------------- */
-@media only screen and (max-width: 480px) {
+/* ---------------------- Screen width 0px to 768px ---------------------- */
+@media only screen and (max-width: 768px) {
 
 }
