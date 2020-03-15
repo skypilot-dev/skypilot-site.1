@@ -1,0 +1,79 @@
+/* ---------------------- Screen width 768 to 1185 ---------------------- */
+@media only screen and (max-width: 1185px) {
+  body {font-size: 18px}
+  .row {width: 100%;}
+  section {padding: 50px 0}
+  nav .row {
+    width: 90%;
+  }
+  .hero-text-box {
+    position: absolute;
+    padding: 2%;
+    width: 94%;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  h1 {
+    font-size: 220%;
+    margin-bottom: 25px;
+  }
+  h2 {
+    font-size: 170%;
+    word-spacing: 4px;
+    margin-bottom: 25px;
+  }
+  h3 {
+    font-size: 100%;
+  }
+
+  /* SERVICES SECTION */
+  .section-services {
+    padding: 50px 5%;
+  }
+  .services__card {
+    padding: 1% 2%;
+  }
+  .section-services p {
+    font-size: 95%;
+    padding-top: 10px;
+  }
+
+  /* TEAM SECTION */
+  .hex-profile-photo {
+    margin: 0 50px 0 0;
+  }
+  .photo2 {
+    float: left;
+    margin: 0 0 0 50px;
+  }
+  .section-team__text {
+    padding: 0 50px;
+  }
+  .section-team__profile2 {
+    margin-top: 60px;
+  }
+
+  /* PORTFOLIO SECTION */
+  .section-portfolio {
+    margin: 0 2%;
+  }
+
+  /* FOOTER SECTION */
+  footer .flexbox {
+    padding: 0 5%;
+  }
+}
+
+
+/* ---------------------- Screen width 481px to 947px ---------------------- */
+@media only screen and (max-width: 947px) {
+
+}
+
+
+/* ---------------------- Screen width 0px to 480px ---------------------- */
+@media only screen and (max-width: 480px) {
+
+}
