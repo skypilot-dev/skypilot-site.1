@@ -142,8 +142,8 @@
   }
 
 
-/* ---------------------- Screen width 480px to 768px ---------------------- */
-@media only screen and (max-width: 768px) {
+/* ---------------------- Screen width 480px to 767px ---------------------- */
+@media only screen and (max-width: 767px) {
   body {font-size: 16px}
   .row {width: 100%;}
   section {padding: 30px 0}
@@ -161,7 +161,7 @@
   h2 {
     font-size: 160%;
     word-spacing: 2px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   h3 {
     font-size: 120%;
@@ -227,12 +227,41 @@
     display: block;
     width: 90%;
     float: none;
-    margin: auto auto 7% auto;
+    margin: auto auto 40px auto;
+  }
+
+  /* HIGHLIGHT SECTION */
+  .section-highlight {
+    margin: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .highlight__image {
+    margin: 0;
+  }
+  .highlight__image img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    object-position: 50% 80%;
+    float: none;
+    display: inline-block;
+  }
+  .highlight__text {
+    padding: 60px 4%;
+    margin: 0 auto;
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    width: 100%;
+    line-height: 150%;
+    display: inline-block;
   }
 
 
-  /* HEADER SECTION */
-  /* HEADER SECTION */
+
+  /* TEAM SECTION */
   /* HEADER SECTION */
 
 
