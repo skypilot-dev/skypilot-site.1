@@ -72,7 +72,6 @@
   h5 {
     margin: 5px 0;
   }
-
   .highlight__image {
     width: 40%;
   }
@@ -101,7 +100,6 @@
   .section-team__profile2 {
     margin-top: 30px;
   }
-
   /* PORTFOLIO SECTION */
   .section-portfolio {
     align-items: stretch;
@@ -124,7 +122,6 @@
     padding: 7% 5%;
     text-align: left;
   }
-
   .box-text h2 {
     text-align: left;
     margin-bottom: 15px;
@@ -133,15 +130,120 @@
     flex-direction: row;
     width: 100%;
   }
-
   /* CONTACT SECTION */
   .contact__card {
-
     left: 60%;
 }
+  .main-nav {
+    line-height: 200%;
+  }
+  .wordmark {
+    padding-top: 0.15rem;
+  }
 
 
-/* ---------------------- Screen width 0px to 768px ---------------------- */
+/* ---------------------- Screen width 480px to 768px ---------------------- */
 @media only screen and (max-width: 768px) {
+  body {font-size: 16px}
+  .row {width: 100%;}
+  section {padding: 30px 0}
+  .col {
+    width: 100%;
+    margin: 0 0 4% 0;
+  }
+  nav .row {
+    width: 100%;
+  }
+  h1 {
+    font-size: 180%;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 160%;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+  }
+  h3 {
+    font-size: 120%;
+  }
+  /* HEADER SECTION */
+  header {
+    height: 70vh;
+    margin: 0;
+  }
+  nav .row {
+    width: 92%;
+  }
+  .hero-text-box {
+    width: 92%;
+    margin: auto;
+    padding: 0;
+  }
+  .hero-text-box col {
+  }
+  .hero__social-icons {
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-left: 4%;
+  }
+  .hero__social-icons div {
+    display: inline-block;
+    padding-right: 15px;
+  }
+  .hero__long-copy {
+    margin-bottom: 30px;
+  }
+  .main-nav {
+    line-height: 200%;
+  }
+  .main-nav li {
+    margin-left: 2%;
+  }
+  .wordmark {
+    padding-top: 0.48rem;
+    font-size: 110%;
+  }
+  /* SERVICES SECTION */
+  .section-services {
+    text-align: left;
+    padding: 60px 4%;
+  }
+  .section-services .row {
+    margin-bottom: 0;
+  }
+  .section-services .hexagon {
+    display: block;
+    float: left;
+    margin-right: 30px;
+  }
+  .section-services p {
+    display: inline-block;
+    width: calc(100% - 93px);
+    padding-top: 5px;
+  }
+  .services__card {
+    padding: 0;
+    display: block;
+    width: 90%;
+    float: none;
+    margin: auto auto 7% auto;
+  }
 
+
+  /* HEADER SECTION */
+  /* HEADER SECTION */
+  /* HEADER SECTION */
+
+
+
+
+}
+
+/* ---------------------- Screen width 0px to 479px ---------------------- */
+.wordmark {
+  padding-top: 0.4rem;
+}
+.main-nav li {
+  margin-left: 0.4rem;
 }
