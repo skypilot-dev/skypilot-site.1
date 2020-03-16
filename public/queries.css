@@ -146,7 +146,7 @@
 @media only screen and (max-width: 767px) {
   body {font-size: 16px}
   .row {width: 100%;}
-  section {padding: 30px 0}
+  section {padding: 60px 0}
   .col {
     width: 100%;
     margin: 0 0 4% 0;
@@ -155,7 +155,7 @@
     width: 100%;
   }
   h1 {
-    font-size: 180%;
+    font-size: 200%;
     margin-bottom: 20px;
   }
   h2 {
@@ -259,9 +259,38 @@
     display: inline-block;
   }
 
-
-
   /* TEAM SECTION */
+  .section-team div h2 {
+    padding-bottom: 10px;
+  }
+  .section-team__profile1 div:first-child,
+  .section-team__profile2 .col:last-child {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .hex-profile-photo {
+    float: none;
+    margin: 0;
+  }
+  .section-team__text {
+    text-align: center;
+  }
+  .section-team__profile2 {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 60px;
+
+  }
+  .team__social-icons {
+    font-size: 160%;
+  }
+  .team__social-icons:first-child {
+    margin-right: 15px;
+  }
+
+
+
   /* HEADER SECTION */
 
 
