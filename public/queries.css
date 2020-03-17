@@ -86,6 +86,7 @@
     max-width: 600px;
     width: 60%;
   }
+
   /* TEAM SECTION */
   .hex-profile-photo {
     margin: 0 30px 0 0;
@@ -100,6 +101,7 @@
   .section-team__profile2 {
     margin-top: 30px;
   }
+
   /* PORTFOLIO SECTION */
   .section-portfolio {
     align-items: stretch;
@@ -130,23 +132,30 @@
     flex-direction: row;
     width: 100%;
   }
+
   /* CONTACT SECTION */
   .contact__card {
     left: 60%;
-}
+  }
   .main-nav {
     line-height: 200%;
   }
   .wordmark {
     padding-top: 0.15rem;
   }
-
+}
 
 /* ---------------------- Screen width 480px to 767px ---------------------- */
 @media only screen and (max-width: 767px) {
-  body {font-size: 16px}
-  .row {width: 100%;}
-  section {padding: 60px 0}
+  body {
+    font-size: 16px
+  }
+  .row {
+    width: 100%;
+  }
+  section {
+    padding: 60px 0
+  }
   .col {
     width: 100%;
     margin: 0 0 4% 0;
@@ -166,6 +175,7 @@
   h3 {
     font-size: 120%;
   }
+
   /* HEADER SECTION */
   header {
     height: 70vh;
@@ -204,6 +214,7 @@
     padding-top: 0.48rem;
     font-size: 110%;
   }
+
   /* SERVICES SECTION */
   .section-services {
     text-align: left;
@@ -290,7 +301,7 @@
 
   /* PORTFOLIO SECTION */
   .section-portfolio {
-    margin: 0;
+    margin: 0 3%;
     padding: 0;
     flex-direction: row;
   }
@@ -332,7 +343,7 @@
   }
   .process__background {
     height: 90%;
-    padding:0;
+    padding: 0;
   }
   .process__background ul {
     margin: 0;
@@ -388,25 +399,112 @@
   }
   .process__step.iteration {
     border: 1px solid #E6AD0A;
-    margin-left: 4%;
-    width: 92%;
     padding: 4%;
+    margin-left: calc(20% - 31px - 4%);
+    width: auto;
+    margin-right: 11%;
   }
 
   /* CONTACT SECTION */
+
   /* FOOTER SECTION */
+  footer .flexbox {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    padding: 0 4%;
+  }
+  .footer__logo-blurb {
+    max-width: 100%;
+    order: 3;
+    text-align: center;
+  }
+  footer .flexbox img {
+    float: none;
+  }
+  .footer__nav,
+  .footer__logo-blurb {
+    padding: 4%;
+  }
+  .footer__nav {
+    border-bottom: 1px solid #535353;
+  }
+  .footer__nav li {
+    font-size: 80%;
+    letter-spacing: 1px;
+  }
+  .footer__nav h5 {
+    margin-bottom: 15px;
+  }
+  .footer__scroll {
+    padding: 10px 15px 20px 15px;
+    border-top: none;
+    margin-top: 20px;
+  }
+  .logo-row {
+    padding: 5px 0 20px 0;
+  }
+}
 
 
-
-
+/* ---------------------- Minor break point at 705px ---------------------- */
+@media only screen and (max-width: 705px) {
+  .section-contact {
+    margin: 80px 0 0 0;
+    height: 60vh;
+  }
+  .contact__card {
+    margin: 0 auto;
+    max-width: 450px;
+    height: 60vh;
+    left: 50%;
+    top: calc(50% + 60px);
+    padding: 40px 30px;
+  }
+  .contact-form label {
+    font-size: 100%;
+  }
+  footer {
+    margin: 0;
+  }
 }
 
 /* ---------------------- Screen width 0px to 479px ---------------------- */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 479px) {
   .wordmark {
     padding-top: 0.4rem;
   }
   .main-nav li {
     margin-left: 0.4rem;
+  }
+  .section-contact {
+    margin: 80px 0 0 0;
+    height: 400px
+  }
+  .contact__card {
+    margin: 0 auto;
+    width: 92%;
+    height: 60vh;
+    left: 50%;
+    top: calc(50% + 60px);
+    padding: 40px 30px;
+  }
+  .contact-form label {
+    font-size: 100%;
+  }
+  .contact__card {
+    padding: 25px 20px;
+    height: 400px;
+    top: calc(50% + 40px);
+  }
+  .contact-form textarea {
+    height: 100px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 10px;
+  }
+  footer {
+    padding-top: 50px;
   }
 }
