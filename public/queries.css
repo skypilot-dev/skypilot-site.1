@@ -290,7 +290,7 @@
 
   /* PORTFOLIO SECTION */
   .section-portfolio {
-    margin: 0;
+    margin: 0 3%;
     padding: 0;
     flex-direction: row;
   }
