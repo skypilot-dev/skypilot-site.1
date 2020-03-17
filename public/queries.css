@@ -58,6 +58,7 @@
   /* PORTFOLIO SECTION */
   .section-portfolio {
     margin: 0 2%;
+    padding: 50px 0;
   }
 
   /* FOOTER SECTION */
@@ -106,6 +107,7 @@
   .section-portfolio {
     align-items: stretch;
     flex-wrap: wrap;
+    padding-top: 0;
   }
   .box-image-1 {
     width: 100%;

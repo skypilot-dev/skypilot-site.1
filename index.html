@@ -6,27 +6,28 @@
   <meta
     content="SkyPilot is a software development company committed to bring you beautifully constructed websites."
     name="description">
-  <link href="vendors/css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="vendors/css/grid.css" rel="stylesheet" type="text/css">
-  <link href="main.css" rel="stylesheet" type="text/css">
-  <link href="queries.css" rel="stylesheet" type="text/css">
+  <link href="public/vendors/css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="public/vendors/css/grid.css" rel="stylesheet" type="text/css">
+  <link href="public/main.css" rel="stylesheet" type="text/css">
+  <link href="public/queries.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap"
         rel="stylesheet">
-
+  <link rel="icon" type="image/png" href="/public/images/favicon.jpg">
   <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <title>SkyPilot</title>
 </head>
 <body>
-<header>
+<header class="js--section-top">
   <nav>
     <div class="row">
-      <img alt="SkyPilot logo" src="images/SkyPilot-logo-white-v2.svg" class="logo">
-      <a class="wordmark">SkyPilot</a>
+      <img alt="SkyPilot logo" src="public/images/SkyPilot-logo-white-v2.svg" class="logo">
+      <a class="wordmark js--scroll-to-top" href="#">SkyPilot</a>
       <ul class="main-nav">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#" class="js--scroll-to-services">About</a></li>
+        <li><a href="#" class="js--scroll-to-portfolio">Portfolio</a></li>
+        <li><a href="#" class="js--scroll-to-contact">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -39,30 +40,29 @@
           We create reliable, high-performance online services and beautiful websites that
           provide the ultimate in user experience
         </div>
-        <a class="btn btn-ghost" href="#">Contact us</a>
+        <a class="btn btn-ghost js--scroll-to-contact" href="#">Contact us</a>
       </div>
       <div class="hero__social-icons">
-        <div><ion-icon name="logo-github"></ion-icon></div>
-        <div><ion-icon name="logo-linkedin"></ion-icon></div>
-        <div><ion-icon name="logo-twitter"></ion-icon></div>
+        <div><a href="https://github.com/skypilotcc" target="_blank"><ion-icon name="logo-github"></ion-icon></a></div>
+        <div><a href="https://linkedin.com/company/skypilot" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></div>
       </div>
     </div>
   </div>
   <div class="hero__scroll">
-    <a href="#">
+    <a href="#" class="js--scroll-to-services">
       <div>Learn more</div>
       <div><ion-icon name="chevron-down-outline" class="chevron"></ion-icon></div>
     </a>
   </div>
 </header>
 
-<section class="section-services">
+<section class="section-services js--section-services">
   <div class="row">
     <h2>Our services</h2>
     <div class="row">
       <div class="services__card">
         <div class="hexagon">
-          <img alt="Hexagon icon" src="images/hexagon.svg">
+          <img alt="Hexagon icon" src="public/images/hexagon.svg">
           <ion-icon name="body"></ion-icon>
         </div>
         <h3>User-experience design</h3>
@@ -73,7 +73,7 @@
       </div>
       <div class="services__card">
         <div class="hexagon">
-          <img alt="Hexagon icon" src="images/hexagon.svg">
+          <img alt="Hexagon icon" src="public/images/hexagon.svg">
           <ion-icon name="desktop"></ion-icon>
         </div>
         <h3>User-interface design</h3>
@@ -83,7 +83,7 @@
       </div>
       <div class="services__card">
         <div class="hexagon">
-          <img alt="Hexagon icon" src="images/hexagon.svg">
+          <img alt="Hexagon icon" src="public/images/hexagon.svg">
           <ion-icon name="code-slash"></ion-icon>
         </div>
         <h3>Front-end development</h3>
@@ -96,7 +96,7 @@
     <div class="row">
       <div class="services__card">
         <div class="hexagon">
-          <img alt="Hexagon icon" src="images/hexagon.svg">
+          <img alt="Hexagon icon" src="public/images/hexagon.svg">
           <ion-icon name="server"></ion-icon>
         </div>
         <h3>Back-end development</h3>
@@ -106,7 +106,7 @@
       </div>
       <div class="services__card">
         <div class="hexagon">
-          <img alt="Hexagon icon" src="images/hexagon.svg">
+          <img alt="Hexagon icon" src="public/images/hexagon.svg">
           <ion-icon name="cog"></ion-icon>
         </div>
         <h3>DevOps</h3>
@@ -116,7 +116,7 @@
       </div>
       <div class="services__card last">
         <div class="hexagon">
-          <img alt="Hexagon icon" src="images/hexagon.svg">
+          <img alt="Hexagon icon" src="public/images/hexagon.svg">
           <ion-icon name="people"></ion-icon>
         </div>
         <h3>Project management</h3>
@@ -146,9 +146,8 @@
     </div>
 </section>
 
-<section class="section-team">
+<section class="section-team js--section-team">
   <div class="row">
-
     <h2>Meet your pilots</h2>
   </div>
   <div class="row section-team__profile1">
@@ -166,8 +165,8 @@
         William's areas of expertise are architecture, innovation, and automation. He has a
         proven track record crafting innovative solutions backed by reliable, maintainable code.</p>
       <div>
-        <ion-icon name="logo-github" class="team__social-icons"></ion-icon>
-        <ion-icon name="logo-linkedin" class="team__social-icons"></ion-icon>
+        <a href="https://github.com/williamthorsen" target="_blank"><ion-icon name="logo-github" class="team__social-icons"></ion-icon></a>
+        <a href="https://www.linkedin.com/in/william-thorsen/" target="_blank"><ion-icon name="logo-linkedin" class="team__social-icons"></ion-icon></a>
       </div>
     </div>
   </div>
@@ -178,8 +177,8 @@
       <p>
         As a front-end developer with a degree in psychology, I thrive on creating interfaces that balance polish with practicality and transform users&rsquo; experience. I am an outgoing team player who believes that challenges are what drive us to grow, and it&rsquo;s my hope to find both clients and collaborators who will help me continue to do just that.</p>
       <div>
-        <ion-icon name="logo-github" class="team__social-icons"></ion-icon>
-        <ion-icon name="logo-linkedin" class="team__social-icons"></ion-icon>
+        <a href="https://github.com/camthorsen" target="_blank"><ion-icon name="logo-github" class="team__social-icons"></ion-icon></a>
+        <a href="www.linkedin.com/in/camthorsen" target="_blank"><ion-icon name="logo-linkedin" class="team__social-icons"></ion-icon></a>
       </div>
     </div>
     <div class="col span-1-of-2">
@@ -192,7 +191,7 @@
   </div>
 </section>
 
-<section class="section-portfolio flexbox clearfix">
+<section class="section-portfolio flexbox clearfix js--section-portfolio">
   <div class="col span-2-of-5 flexbox">
     <div class="box-image-1">
       <figure class="portfolio-photo">
@@ -262,7 +261,7 @@
     <div class="row">
       <div class="process__step">
         <div class="hexagon">
-          <img alt="Hexagon icon" src="images/hexagon.svg">
+          <img alt="Hexagon icon" src="public/images/hexagon.svg">
           <ion-icon name="chatbubbles-sharp"></ion-icon>
         </div>
         <h3>Briefing</h3>
@@ -273,7 +272,7 @@
       </div>
       <div class="process__step">
         <div class="hexagon">
-          <img alt="Hexagon icon" src="images/hexagon.svg">
+          <img alt="Hexagon icon" src="public/images/hexagon.svg">
           <ion-icon name="bar-chart-sharp"></ion-icon>
         </div>
         <h3>Research</h3>
@@ -283,7 +282,7 @@
       </div>
       <div class="process__step">
         <div class="hexagon">
-          <img alt="Hexagon icon" src="images/hexagon.svg">
+          <img alt="Hexagon icon" src="public/images/hexagon.svg">
           <ion-icon name="trail-sign-sharp"></ion-icon>
         </div>
         <h3>Planning</h3>
@@ -296,7 +295,7 @@
     <div class="row">
       <div class="process__step">
         <div class="hexagon">
-          <img alt="Hexagon icon" src="images/hexagon.svg">
+          <img alt="Hexagon icon" src="public/images/hexagon.svg">
           <ion-icon name="airplane-sharp"></ion-icon>
         </div>
         <h3>Prototyping</h3>
@@ -311,7 +310,7 @@
       </div>
       <div class="process__step">
         <div class="hexagon">
-          <img alt="Hexagon icon" src="images/hexagon.svg">
+          <img alt="Hexagon icon" src="public/images/hexagon.svg">
           <ion-icon name="paper-plane-sharp"></ion-icon>
         </div>
         <h3>Wireframing</h3>
@@ -326,7 +325,7 @@
       </div>
       <div class="process__step">
         <div class="hexagon">
-          <img alt="Hexagon icon" src="images/hexagon.svg">
+          <img alt="Hexagon icon" src="public/images/hexagon.svg">
           <ion-icon name="create-sharp"></ion-icon>
         </div>
         <h3>Sketching</h3>
@@ -340,7 +339,7 @@
     <div class="row">
       <div class="process__step">
         <div class="hexagon">
-          <img alt="Hexagon icon" src="images/hexagon.svg">
+          <img alt="Hexagon icon" src="public/images/hexagon.svg">
           <ion-icon name="code-slash-sharp"></ion-icon>
         </div>
         <h3>Coding</h3>
@@ -356,7 +355,7 @@
       </div>
       <div class="process__step">
         <div class="hexagon">
-          <img alt="Hexagon icon" src="images/hexagon.svg">
+          <img alt="Hexagon icon" src="public/images/hexagon.svg">
           <ion-icon name="rocket-sharp"></ion-icon>
         </div>
         <h3>Launch</h3>
@@ -372,21 +371,20 @@
       </div>
       <div class="process__step iteration">
         <div class="hexagon">
-          <img alt="Hexagon icon" src="images/hexagon.svg">
+          <img alt="Hexagon icon" src="public/images/hexagon.svg">
           <ion-icon name="sync-sharp"></ion-icon>
         </div>
         <h3>Agile iterations</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar mauris cursus sem
-          placerat tristique. Nam volutpat justo erat, a lobortis dolor.
+          placerat tristique.
         </p>
       </div>
     </div>
   </div>
 </section>
 
-
-<section class="section-contact clearfix">
+<section class="section-contact clearfix js--section-contact">
   <div class="contact__card">
     <form method="post" action="#" class="contact-form">
       <h2>Contact us</h2>
@@ -397,7 +395,7 @@
       <label for="message">Message</label>
       <textarea id="message" name="message" placeholder="Your message"></textarea>
       <div>
-        <a class="btn btn-full" href="#">Contact us</a>
+        <a class="btn btn-full" href="#">Send</a>
       </div>
     </form>
   </div>
@@ -407,8 +405,8 @@
   <div class="flexbox clearfix">
     <div class="footer__logo-blurb">
       <div class="logo-row">
-        <img alt="SkyPilot logo" src="images/SkyPilot-logo-white-v2.svg" class="logo">
-        <a class="wordmark--footer">SkyPilot</a>
+        <img alt="SkyPilot logo" src="public/images/SkyPilot-logo-white-v2.svg" class="logo">
+        <a class="wordmark--footer js--scroll-to-top">SkyPilot</a>
       </div>
       <div class="footer__copy">
         This website was made with <ion-icon name="heart-outline"></ion-icon> using vanilla HTML5 and CSS3.
@@ -417,17 +415,16 @@
     <div class="footer__nav">
       <h5>MENU</h5>
       <ul>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact us</a></li>
+        <li><a href="#" class="js--scroll-to-services">Services</a></li>
+        <li><a href="#" class="js--scroll-to-team">Team</a></li>
+        <li><a href="#" class="js--scroll-to-contact">Contact us</a></li>
       </ul>
     </div>
     <div class="footer__nav">
       <h5>SOCIAL</h5>
       <ul>
-        <li><a href="#">Github</a></li>
-        <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">Twitter</a></li>
+        <li><a href="https://github.com/skypilotcc" target="_blank">Github</a></li>
+        <li><a href="https://linkedin.com/company/skypilot" target="_blank">LinkedIn</a></li>
       </ul>
     </div>
     <div class="footer__nav">
@@ -439,11 +436,34 @@
     </div>
   </div>
   <div class="footer__scroll">
-    <a href="#">
+    <a href="#" class="js--scroll-to-top">
       <ion-icon name="chevron-up" class="chevron"></ion-icon>
       <p>Back to top</p>
     </a>
   </div>
 </footer>
 </body>
+<script>
+  $(document).ready(function() {
+    /* Scroll on buttons */
+    $('.js--scroll-to-services').click(function () {
+      $('html, body').animate({scrollTop: $('.js--section-services').offset().top}, 1000);
+    });
+
+    $('.js--scroll-to-contact').click(function () {
+      $('html, body').animate({scrollTop: $('.js--section-contact').offset().top}, 1000);
+    });
+
+    $('.js--scroll-to-team').click(function () {
+      $('html, body').animate({scrollTop: $('.js--section-team').offset().top}, 1000);
+    });
+
+    $('.js--scroll-to-portfolio').click(function () {
+      $('html, body').animate({scrollTop: $('.js--section-portfolio').offset().top}, 1000);
+    });
+    $('.js--scroll-to-top').click(function () {
+      $('html, body').animate({scrollTop: $('.js--section-top').offset().top}, 1000);
+    });
+  });
+</script>
 </html>

@@ -1,20 +1,12 @@
 {
   "name": "skypilot-site",
-  "version": "0.1.0",
-  "private": true,
   "description": "SkyPilot website",
   "homepage": "https://github.com/skypilotcc/skypilot-site#readme",
-  "bugs": {
-    "url": "https://github.com/skypilotcc/skypilot-site/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/skypilotcc/skypilot-site.git"
-  },
-  "license": "UNLICENSED",
+  "version": "0.1.2",
+  "main": "lib/index.js",
   "author": {
-    "name": "Camilla Thorsen",
-    "email": "camilla@thorsen.dev"
+    "email": "camilla@thorsen.dev",
+    "name": "Camilla Thorsen"
   },
   "contributors": [
     {
@@ -22,7 +14,20 @@
       "email": "william@thorsen.dev"
     }
   ],
-  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/skypilotcc/skypilot-site.git"
+  },
+  "bugs": {
+    "url": "https://github.com/skypilotcc/skypilot-site/issues"
+  },
+  "devDependencies": {
+    "@skypilot/toolchain": "^3.5.8",
+    "live-server": "^1.2.1"
+  },
+  "files": [
+    "/lib"
+  ],
   "scripts": {
     "all-ci-checks": "yarn run all-cq-checks && yarn run build",
     "all-cq-checks": "yarn run typecheck && yarn run lint --quiet && yarn test",
@@ -30,22 +35,17 @@
     "ci": "yarn run all-ci-checks",
     "compile-ts": "babel ./src --out-dir ./lib --extensions .ts --ignore '**/__tests__/*' --ignore '**/*.d.ts'",
     "cq": "yarn run all-cq-checks",
-    "dev": "live-server --port=4000 public",
+    "dev": "live-server --port=4000 .",
     "lint": "eslint --cache '**/*.{js,ts}'",
     "publish:default": "echo 'No publication step. Skipping.'",
     "tc": "yarn run typecheck",
     "test": "jest",
     "typecheck": "tsc"
   },
-  "devDependencies": {
-    "@skypilot/toolchain": "^3.5.8",
-    "live-server": "^1.2.1"
-  },
+  "private": true,
+  "license": "UNLICENSED",
   "publishConfig": {
     "access": "restricted"
   },
-  "files": [
-    "/lib"
-  ],
   "types": "lib/index.d.ts"
 }
