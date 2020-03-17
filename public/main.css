@@ -252,12 +252,9 @@ nav .row {
   right: 3%;
 }
 
-.hero__social-icons div:first-child {
+.hero__social-icons div:nth-child(1),
+.hero__social-icons div:nth-child(2){
   padding-bottom: 15px;
-}
-
-.hero__social-icons div:last-child {
-  padding-top: 15px;
 }
 
 .hero__long-copy {
