@@ -388,9 +388,10 @@
   }
   .process__step.iteration {
     border: 1px solid #E6AD0A;
-    margin-left: 4%;
-    width: 92%;
     padding: 4%;
+    margin-left: calc(20% - 31px - 4%);
+    width: auto;
+    margin-right: 11%;
   }
 
   /* CONTACT SECTION */
