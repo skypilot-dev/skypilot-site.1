@@ -24,8 +24,9 @@
       <img alt="SkyPilot logo" src="public/images/SkyPilot-logo-white-v2.svg" class="logo">
       <a class="wordmark">SkyPilot</a>
       <ul class="main-nav">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#" class="js--scroll-to-services">About</a></li>
+        <li><a href="#" class="js--scroll-to-portfolio">Portfolio</a></li>
+        <li><a href="#" class="js--scroll-to-contact">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -38,7 +39,7 @@
           We create reliable, high-performance online services and beautiful websites that
           provide the ultimate in user experience
         </div>
-        <a class="btn btn-ghost" href="#">Contact us</a>
+        <a class="btn btn-ghost js--scroll-to-contact" href="#">Contact us</a>
       </div>
       <div class="hero__social-icons">
         <div><a href="https://github.com/skypilotcc" target="_blank"><ion-icon name="logo-github"></ion-icon></a></div>
@@ -47,14 +48,14 @@
     </div>
   </div>
   <div class="hero__scroll">
-    <a href="#">
+    <a href="#" class="js--scroll-to-services">
       <div>Learn more</div>
       <div><ion-icon name="chevron-down-outline" class="chevron"></ion-icon></div>
     </a>
   </div>
 </header>
 
-<section class="section-services">
+<section class="section-services js--section-services">
   <div class="row">
     <h2>Our services</h2>
     <div class="row">
@@ -144,9 +145,8 @@
     </div>
 </section>
 
-<section class="section-team">
+<section class="section-team js--section-team">
   <div class="row">
-
     <h2>Meet your pilots</h2>
   </div>
   <div class="row section-team__profile1">
@@ -190,7 +190,7 @@
   </div>
 </section>
 
-<section class="section-portfolio flexbox clearfix">
+<section class="section-portfolio flexbox clearfix js--section-portfolio">
   <div class="col span-2-of-5 flexbox">
     <div class="box-image-1">
       <figure class="portfolio-photo">
@@ -384,7 +384,7 @@
 </section>
 
 
-<section class="section-contact clearfix">
+<section class="section-contact clearfix js--section-contact">
   <div class="contact__card">
     <form method="post" action="#" class="contact-form">
       <h2>Contact us</h2>
@@ -415,9 +415,9 @@
     <div class="footer__nav">
       <h5>MENU</h5>
       <ul>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact us</a></li>
+        <li><a href="#" class="js--scroll-to-services">Services</a></li>
+        <li><a href="#" class="js--scroll-to-team">Team</a></li>
+        <li><a href="#" class="js--scroll-to-contact">Contact us</a></li>
       </ul>
     </div>
     <div class="footer__nav">
@@ -444,6 +444,23 @@
 </footer>
 </body>
 <script>
+  $(document).ready(function() {
+    /* Scroll on buttons */
+    $('.js--scroll-to-services').click(function () {
+      $('html, body').animate({scrollTop: $('.js--section-services').offset().top}, 1000);
+    });
 
+    $('.js--scroll-to-contact').click(function () {
+      $('html, body').animate({scrollTop: $('.js--section-contact').offset().top}, 1000);
+    });
+
+    $('.js--scroll-to-team').click(function () {
+      $('html, body').animate({scrollTop: $('.js--section-team').offset().top}, 1000);
+    });
+
+    $('.js--scroll-to-portfolio').click(function () {
+      $('html, body').animate({scrollTop: $('.js--section-portfolio').offset().top}, 1000);
+    });
+  });
 </script>
 </html>
