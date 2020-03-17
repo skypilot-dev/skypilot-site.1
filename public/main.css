@@ -156,12 +156,19 @@ a:active {
 }
 
 .hero__social-icons a:link,
-.hero__social-icons a:visited {
+.hero__social-icons a:visited,
+.logo-row a:link,
+.logo-row a:visited,
+nav div a:link,
+nav div a:visited {
   color: white;
+  text-decoration: none;
 }
 
 .hero__social-icons a:hover,
-.hero__social-icons a:active {
+.hero__social-icons a:active,
+.logo-row a:active,
+nav div a:active {
   color: #d5d5d5;
 }
 
@@ -481,6 +488,7 @@ nav .row {
 .section-portfolio {
   align-items: stretch;
   margin: 2%;
+  padding: 0;
 }
 
 .box-image-1 {

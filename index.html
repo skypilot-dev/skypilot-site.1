@@ -15,14 +15,15 @@
   <link rel="icon" type="image/png" href="/public/images/favicon.jpg">
   <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <title>SkyPilot</title>
 </head>
 <body>
-<header>
+<header class="js--section-top">
   <nav>
     <div class="row">
       <img alt="SkyPilot logo" src="public/images/SkyPilot-logo-white-v2.svg" class="logo">
-      <a class="wordmark">SkyPilot</a>
+      <a class="wordmark js--scroll-to-top" href="#">SkyPilot</a>
       <ul class="main-nav">
         <li><a href="#" class="js--scroll-to-services">About</a></li>
         <li><a href="#" class="js--scroll-to-portfolio">Portfolio</a></li>
@@ -376,13 +377,12 @@
         <h3>Agile iterations</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar mauris cursus sem
-          placerat tristique. Nam volutpat justo erat, a lobortis dolor.
+          placerat tristique.
         </p>
       </div>
     </div>
   </div>
 </section>
-
 
 <section class="section-contact clearfix js--section-contact">
   <div class="contact__card">
@@ -406,7 +406,7 @@
     <div class="footer__logo-blurb">
       <div class="logo-row">
         <img alt="SkyPilot logo" src="public/images/SkyPilot-logo-white-v2.svg" class="logo">
-        <a class="wordmark--footer">SkyPilot</a>
+        <a class="wordmark--footer js--scroll-to-top">SkyPilot</a>
       </div>
       <div class="footer__copy">
         This website was made with <ion-icon name="heart-outline"></ion-icon> using vanilla HTML5 and CSS3.
@@ -436,7 +436,7 @@
     </div>
   </div>
   <div class="footer__scroll">
-    <a href="#">
+    <a href="#" class="js--scroll-to-top">
       <ion-icon name="chevron-up" class="chevron"></ion-icon>
       <p>Back to top</p>
     </a>
@@ -460,6 +460,9 @@
 
     $('.js--scroll-to-portfolio').click(function () {
       $('html, body').animate({scrollTop: $('.js--section-portfolio').offset().top}, 1000);
+    });
+    $('.js--scroll-to-top').click(function () {
+      $('html, body').animate({scrollTop: $('.js--section-top').offset().top}, 1000);
     });
   });
 </script>
