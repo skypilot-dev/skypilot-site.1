@@ -30,7 +30,7 @@
     "ci": "yarn run all-ci-checks",
     "compile-ts": "babel ./src --out-dir ./lib --extensions .ts --ignore '**/__tests__/*' --ignore '**/*.d.ts'",
     "cq": "yarn run all-cq-checks",
-    "dev": "live-server --port=4000 public",
+    "dev": "live-server --port=4000 .",
     "lint": "eslint --cache '**/*.{js,ts}'",
     "publish:default": "echo 'No publication step. Skipping.'",
     "tc": "yarn run typecheck",
