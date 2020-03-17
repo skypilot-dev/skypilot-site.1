@@ -395,6 +395,21 @@
   }
 
   /* CONTACT SECTION */
+  .section-contact {
+    margin: 80px 0 0 0;
+    height: 60vh;
+  }
+  .contact__card {
+    margin: 0 auto;
+    width: 92%;
+    height: 60vh;
+    left: 50%;
+    top: calc(50% + 60px);
+    padding: 40px 30px;
+  .contact-form label {
+    font-size: 100%;
+  }
+
   /* FOOTER SECTION */
 
 
