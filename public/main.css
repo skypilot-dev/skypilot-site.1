@@ -545,11 +545,11 @@ nav .row {
 }
 
 .process__foreground {
-  position: relative;
-  z-index: 1;
-  margin: auto;
-  width: 70%;
-}
+   position: relative;
+   z-index: 1;
+   margin: auto;
+   width: 70%;
+ }
 
 /* Process S line */
 .process__background {
