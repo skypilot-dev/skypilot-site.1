@@ -146,8 +146,27 @@ p {
   color: #284b7b;
 }
 /* ----- LINKS ----- */
+a:link,
+a:visited {
+  color: #203B60;
+}
+a:hover,
+a:active {
+  color: #678198;
+}
 
-/* ----- BUTTONS ----- */
+
+.hero__social-icons a:link,
+.hero__social-icons a:visited {
+  color: white;
+}
+
+.hero__social-icons a:hover,
+.hero__social-icons a:active {
+  color: #d5d5d5;
+}
+
+  /* ----- BUTTONS ----- */
 .btn:link,
 .btn:visited,
 input[type=submit]{
@@ -164,8 +183,8 @@ input[type=submit]{
 .btn-full:link,
 .btn-full:visited,
 input[type=submit]{
-  background-color: #2a7dad;
-  border: 1px solid #2a7dad;
+  background-color: #203B60;
+  border: 1px solid #203B60;
   color: #fff;
   margin-right: 15px;
 }
@@ -185,7 +204,7 @@ input[type=submit]:active {
 
 .btn-full:hover,
 .btn-full:active {
-  border-color: #cf6d17;
+  border-color: #678198;
 }
 
 .btn-ghost:hover,
@@ -454,7 +473,6 @@ nav .row {
 
 .team__social-icons {
   font-size: 150%;
-  color: #333;
 }
 
 /* ----------------------------------------------------------- */
