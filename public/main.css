@@ -253,11 +253,11 @@ nav .row {
 }
 
 .hero__social-icons div:first-child {
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .hero__social-icons div:last-child {
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .hero__long-copy {
@@ -294,6 +294,7 @@ nav .row {
 .main-nav {
   float: right;
   list-style: none;
+  line-height: 150%;
 }
 
 .main-nav li {
@@ -319,14 +320,14 @@ nav .row {
 
 
 /* Sticky navigation */
-.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 1.0);
-  box-shadow: 0 2px 2px #efefef;
-}
+/*.sticky {*/
+/*  position: fixed;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  width: 100%;*/
+/*  background-color: rgba(255, 255, 255, 1.0);*/
+/*  box-shadow: 0 2px 2px #efefef;*/
+/*}*/
 
 /* ----------------------------------------------------------- */
 /* SERVICES SECTION */
@@ -355,6 +356,10 @@ nav .row {
   padding-top: 15px;
 }
 
+.section-services .last {
+  margin-bottom: 0;
+}
+
 /* ----------------------------------------------------------- */
 /* HIGHLIGHT SECTION */
 /* ----------------------------------------------------------- */
@@ -363,7 +368,7 @@ nav .row {
   background-color: #f3f3f3;
   padding: 0;
   position: relative;
-  margin: 0 2% 2% 2%;
+  margin: 0 2%;
 }
 
 .section-highlight .row {
@@ -540,11 +545,11 @@ nav .row {
 }
 
 .process__foreground {
-  position: relative;
-  z-index: 1;
-  margin: auto;
-  width: 70%;
-}
+   position: relative;
+   z-index: 1;
+   margin: auto;
+   width: 70%;
+ }
 
 /* Process S line */
 .process__background {
