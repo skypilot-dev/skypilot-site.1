@@ -646,6 +646,14 @@ nav .row {
   padding-right: 1.5%;
 }
 
+.process__step.iteration {
+  border: 1px solid #E6AD0A;
+  padding: 17px;
+  width: 30%;
+  margin-left: 3.3%;
+  height: auto;
+}
+
 .process__step.iteration .hexagon ion-icon {
   color: #E6AD0A;
 }
