@@ -765,6 +765,7 @@ footer {
 
 .footer__copy {
   font-size: 80%;
+  line-height: 140%;
 }
 
 .footer__scroll {
