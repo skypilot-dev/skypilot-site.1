@@ -223,7 +223,7 @@ input[type=submit]:active {
 /* HEADER */
 /* ----------------------------------------------------------- */
 header {
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(https://res.cloudinary.com/db8eidwqd/image/upload/v1583903789/splash-banner.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,h_1600/v1584555699/splash-banner.jpg);
   background-size: cover;
   background-position: center;
   height: 70vh;
