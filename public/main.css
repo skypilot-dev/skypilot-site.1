@@ -152,7 +152,7 @@ a:visited {
 }
 a:hover,
 a:active {
-  color: #678198;
+  color: #c78f0a;
 }
 
 .hero__social-icons a:link,
@@ -169,7 +169,7 @@ nav div a:visited {
 .hero__social-icons a:active,
 .logo-row a:active,
 nav div a:active {
-  color: #d5d5d5;
+  color: #c78f0a;
 }
 
   /* ----- BUTTONS ----- */
@@ -189,8 +189,8 @@ input[type=submit]{
 .btn-full:link,
 .btn-full:visited,
 input[type=submit]{
-  background-color: #203B60;
-  border: 1px solid #203B60;
+  background-color: #dba30a;
+  border: 1px solid #dba30a;
   color: #fff;
   margin-right: 15px;
 }
@@ -205,17 +205,17 @@ input[type=submit]{
 .btn:active,
 input[type=submit]:hover,
 input[type=submit]:active {
-  background-color: #678198;
+  background-color: #c78f0a;
 }
 
 .btn-full:hover,
 .btn-full:active {
-  border-color: #678198;
+  border-color: #c78f0a;
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-  border: 1px solid #678198;
+  border: 1px solid #c78f0a;
   color: #fff;
 }
 
@@ -337,7 +337,7 @@ nav .row {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-  border-bottom: 2px solid #edd8b9;
+  border-bottom: 2px solid #c78f0a;
 }
 
 
