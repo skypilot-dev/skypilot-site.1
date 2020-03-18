@@ -684,11 +684,13 @@ nav .row {
 /* CONTACT US SECTION */
 /* ----------------------------------------------------------- */
 .section-contact {
-  background-image: url(https://res.cloudinary.com/db8eidwqd/image/upload/v1584158767/contact-banner.jpg);
+  background-image:  linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_1600/v1584567048/white-clouds.jpg);
   background-size: cover;
   background-position: center;
-  height: 400px;
+  background-repeat: no-repeat;
   background-attachment: fixed;
+  height: 400px;
+  width: 96%;
   margin: 80px 2% 0 2%;
   position: relative;
 }
