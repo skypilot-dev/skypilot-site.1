@@ -391,6 +391,7 @@ nav .row {
   padding: 0;
   position: relative;
   margin: 0 2%;
+  max-height: 500px;
 }
 
 .section-highlight .row {
@@ -406,12 +407,11 @@ nav .row {
   margin: 0;
   float: right;
   line-height: 0;
-}
-
-.highlight__image img {
-  width: 100%;
-  height: auto;
-  margin: 0;
+  background-image: url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_720/v1583984463/office.jpg);
+  background-size: cover;
+  background-position: 50% 70%;
+  height: 60vh;
+  max-height: 500px;
 }
 
 .highlight__text {
