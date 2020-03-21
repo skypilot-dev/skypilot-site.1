@@ -442,22 +442,22 @@
 <script>
   $(document).ready(function() {
     /* Scroll on buttons */
-    $('.js--scroll-to-services').click(function () {
+    $('.js--scroll-to-services').on('click', function () {
       $('html, body').animate({scrollTop: $('.js--section-services').offset().top}, 1000);
     });
 
-    $('.js--scroll-to-contact').click(function () {
+    $('.js--scroll-to-contact').on('click', function () {
       $('html, body').animate({scrollTop: $('.js--section-contact').offset().top}, 1000);
     });
 
-    $('.js--scroll-to-team').click(function () {
+    $('.js--scroll-to-team').on('click', function () {
       $('html, body').animate({scrollTop: $('.js--section-team').offset().top}, 1000);
     });
 
-    $('.js--scroll-to-portfolio').click(function () {
+    $('.js--scroll-to-portfolio').on('click', function () {
       $('html, body').animate({scrollTop: $('.js--section-portfolio').offset().top}, 1000);
     });
-    $('.js--scroll-to-top').click(function () {
+    $('.js--scroll-to-top').on('click', function () {
       $('html, body').animate({scrollTop: $('.js--section-top').offset().top}, 1000);
     });
   });
