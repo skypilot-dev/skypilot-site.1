@@ -767,6 +767,7 @@ footer {
 
 .wordmark--footer {
   color: #fff;
+  cursor: pointer;
   display: inline-block;
   font-size: 140%;
   padding-left: 7px;
