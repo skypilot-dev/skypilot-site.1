@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta
+    content="SkyPilot is a software development company committed to bring you beautifully constructed websites."
+    name="description">
+  <link href="public/vendors/css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="public/vendors/css/grid.css" rel="stylesheet" type="text/css">
+  <link href="public/main.css" rel="stylesheet" type="text/css">
+  <link href="public/queries.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap"
+        rel="stylesheet">
+  <link rel="icon" type="image/png" href="/public/images/favicon-bird-gold.jpg">
+  <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <title>Terms and Conditions</title>
+</head>
+<body>
+<header class="js--section-top header--white">
+  <nav>
+    <div class="row">
+      <img alt="SkyPilot logo" src="public/images/SkyPilot-logo-gold-v2.svg" class="logo">
+      <a class="wordmark js--scroll-to-top" href="index.html">SkyPilot</a>
+      <ul class="main-nav">
+        <li><a href="index.html#anchor-services">About</a></li>
+        <li><a href="index.html#anchor-portfolio">Portfolio</a></li>
+        <li><a href="index.html#anchor-contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+Body text
+
+<footer>
+  <div class="flexbox clearfix">
+    <div class="footer__logo-blurb">
+      <div class="logo-row">
+        <img alt="SkyPilot logo" src="public/images/SkyPilot-logo-white-v2.svg" class="logo">
+        <a class="wordmark--footer" href="index.html">SkyPilot</a>
+      </div>
+      <div class="footer__copy">
+        This website was made with <ion-icon name="heart-outline"></ion-icon> using vanilla HTML5 and CSS3.
+      </div>
+    </div>
+    <div class="footer__nav">
+      <h5>MENU</h5>
+      <ul>
+        <li><a href="index.html#anchor-services">Services</a></li>
+        <li><a href="index.html#anchor-team">Team</a></li>
+        <li><a href="index.html#anchor-contact">Contact us</a></li>
+      </ul>
+    </div>
+    <div class="footer__nav">
+      <h5>SOCIAL</h5>
+      <ul>
+        <li><a href="https://github.com/skypilotcc" target="_blank">Github</a></li>
+        <li><a href="https://linkedin.com/company/skypilot" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+    <div class="footer__nav">
+      <h5>INFO</h5>
+      <ul>
+        <li><a href="Terms.html">Terms & conditions</a></li>
+        <li><a href="#">Privacy policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__scroll">
+    <a href="#" class="js--scroll-to-top">
+      <ion-icon name="chevron-up" class="chevron"></ion-icon>
+      <p>Back to top</p>
+    </a>
+  </div>
+</footer>
+</body>
+<script>
+  $(document).ready(function() {
+    /* Scroll on buttons */
+       $('.js--scroll-to-top').click(function () {
+      $('html, body').animate({scrollTop: $('.js--section-top').offset().top}, 1000);
+    });
+  });
+</script>
+</html>

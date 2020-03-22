@@ -152,7 +152,7 @@ a:visited {
 }
 a:hover,
 a:active {
-  color: #678198;
+  color: #c78f0a;
 }
 
 .hero__social-icons a:link,
@@ -169,7 +169,7 @@ nav div a:visited {
 .hero__social-icons a:active,
 .logo-row a:active,
 nav div a:active {
-  color: #d5d5d5;
+  color: #c78f0a;
 }
 
   /* ----- BUTTONS ----- */
@@ -189,8 +189,8 @@ input[type=submit]{
 .btn-full:link,
 .btn-full:visited,
 input[type=submit]{
-  background-color: #203B60;
-  border: 1px solid #203B60;
+  background-color: #dba30a;
+  border: 1px solid #dba30a;
   color: #fff;
   margin-right: 15px;
 }
@@ -205,25 +205,26 @@ input[type=submit]{
 .btn:active,
 input[type=submit]:hover,
 input[type=submit]:active {
-  background-color: #678198;
+  background-color: #c78f0a;
 }
 
 .btn-full:hover,
 .btn-full:active {
-  border-color: #678198;
+  border-color: #c78f0a;
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-  border: 1px solid #678198;
+  border: 1px solid #c78f0a;
   color: #fff;
 }
 
 /* ----------------------------------------------------------- */
 /* HEADER */
 /* ----------------------------------------------------------- */
+/* Landing header */
 header {
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(https://res.cloudinary.com/db8eidwqd/image/upload/v1583903789/splash-banner.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,h_1600/v1584555699/splash-banner.jpg);
   background-size: cover;
   background-position: center;
   height: 70vh;
@@ -337,19 +338,30 @@ nav .row {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-  border-bottom: 2px solid #edd8b9;
+  border-bottom: 2px solid #c78f0a;
 }
 
+/* White header */
+.header--white {
+  background-image: none;
+  height: 100px;
+  color: #555;
+  min-height: 100px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.header--white .wordmark {
+  color: #555;
+}
+.header--white nav {
+  box-shadow: 0 15px 15px -15px #e2e2e2;
+}
 
-/* Sticky navigation */
-/*.sticky {*/
-/*  position: fixed;*/
-/*  top: 0;*/
-/*  left: 0;*/
-/*  width: 100%;*/
-/*  background-color: rgba(255, 255, 255, 1.0);*/
-/*  box-shadow: 0 2px 2px #efefef;*/
-/*}*/
+/* Main navigation */
+.header--white .main-nav li a:link,
+.header--white .main-nav li a:visited {
+  color: #555;
+}
 
 /* ----------------------------------------------------------- */
 /* SERVICES SECTION */
@@ -391,6 +403,7 @@ nav .row {
   padding: 0;
   position: relative;
   margin: 0 2%;
+  max-height: 500px;
 }
 
 .section-highlight .row {
@@ -406,12 +419,11 @@ nav .row {
   margin: 0;
   float: right;
   line-height: 0;
-}
-
-.highlight__image img {
-  width: 100%;
-  height: auto;
-  margin: 0;
+  background-image: url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_720/v1583984463/office.jpg);
+  background-size: cover;
+  background-position: 50% 70%;
+  height: 60vh;
+  max-height: 500px;
 }
 
 .highlight__text {
@@ -684,11 +696,13 @@ nav .row {
 /* CONTACT US SECTION */
 /* ----------------------------------------------------------- */
 .section-contact {
-  background-image: url(https://res.cloudinary.com/db8eidwqd/image/upload/v1584158767/contact-banner.jpg);
+  background-image:  linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_1600/v1584567048/white-clouds.jpg);
   background-size: cover;
   background-position: center;
-  height: 400px;
+  background-repeat: no-repeat;
   background-attachment: fixed;
+  height: 400px;
+  width: 96%;
   margin: 80px 2% 0 2%;
   position: relative;
 }
@@ -753,6 +767,7 @@ footer {
 
 .wordmark--footer {
   color: #fff;
+  cursor: pointer;
   display: inline-block;
   font-size: 140%;
   padding-left: 7px;
