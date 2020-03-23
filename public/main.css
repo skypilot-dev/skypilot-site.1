@@ -769,7 +769,7 @@ nav .row {
 .contact-form textarea {
   height: 100px;
 }
-.contact-form div a.btn-full {
+.contact-form button {
   float: right;
   margin-right: 0;
 }
