@@ -829,6 +829,10 @@ footer {
   padding-top: 0.05rem;
 }
 
+.wordmark--footer:hover {
+  color: white;
+}
+
 .logo-row {
   padding: 5px 0 10px 0;
 }
