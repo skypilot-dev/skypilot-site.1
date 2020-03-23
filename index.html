@@ -360,7 +360,7 @@
 
 <section class="section-contact clearfix js--section-contact" id="anchor-contact">
   <div class="contact__card">
-    <form method="post" action="#" class="contact-form">
+    <form action="https://i2zrmxcfqa.execute-api.ca-central-1.amazonaws.com/contact-us" method="post" class="contact-form">
       <h2>Contact us</h2>
       <label for="name">Name</label>
       <input type="text" name="name" id="name" placeholder="John Smith" required>
@@ -368,9 +368,7 @@
       <input type="email" name="email" id="email" placeholder="name@email.com" required>
       <label for="message">Message</label>
       <textarea id="message" name="message" placeholder="Your message"></textarea>
-      <div>
-        <a class="btn btn-full" href="#">Send</a>
-      </div>
+      <input type="submit" value="Send" class="btn btn-full">
     </form>
   </div>
 </section>

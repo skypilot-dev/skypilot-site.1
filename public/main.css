@@ -64,6 +64,12 @@ section {
   padding: 1%;
 }
 
+.page-copy {
+  margin: 0 auto 0 auto;
+  width: 96%;
+  max-width: 700px;
+}
+
 /* ----- HEADINGS ----- */
 h1,
 h2,
@@ -347,16 +353,28 @@ nav .row {
   height: 100px;
   color: #555;
   min-height: 100px;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
+
 .header--white .wordmark {
   color: #555;
 }
+
 .header--white nav {
   box-shadow: 0 15px 15px -15px #e2e2e2;
 }
 
+.header--white nav div {
+  margin: 0 auto 0 auto;
+  max-width: 1140px;
+  width: 96%;
+}
+
+.header--white nav div ul {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
 /* Main navigation */
 .header--white .main-nav li a:link,
 .header--white .main-nav li a:visited {
@@ -827,11 +845,55 @@ footer .flexbox {
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.2s;
   line-height: 200%;
+  padding-bottom: 5px;
 }
 
 .footer__nav li a:hover,
 .footer__nav li a:active {
-  border-bottom: 2px solid #edd8b9;
+  border-bottom: 2px solid #c78f0a;
 }
 
+/* ----------------------------------------------------------- */
+/* LEGAL PAGES: TERMS, CONDITIONS, PRIVACY POLICY */
+/* ----------------------------------------------------------- */
+.legal {
+  margin: 3rem auto 4rem auto;
+}
+
+.legal h1 {
+  color: #555555;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.legal h2 {
+  margin-top: 3rem;
+  text-align: left;
+}
+
+.legal h3{
+  color: #E6AD0A;
+  padding: 1rem;
+  margin-top: 1rem;
+  padding-left: 0;
+}
+
+.legal h6 {
+  text-align: right;
+  color: #797979;
+}
+
+.legal ul {
+  margin-left: 3rem;
+}
+
+.legal p:first-of-type {
+  text-align: center;
+}
+
+.legal p,
+.legal li {
+  font-size: 90%;
+  margin-bottom: 0.7rem;
+}
 
