@@ -360,7 +360,7 @@
 
 <section class="section-contact clearfix js--section-contact" id="anchor-contact">
   <div class="contact__card">
-    <form action="https://i2zrmxcfqa.execute-api.ca-central-1.amazonaws.com/contact-us" method="post" class="contact-form">
+    <div class="contact-form">
       <h2>Contact us</h2>
       <label for="name">Name</label>
       <input type="text" name="name" id="name" placeholder="John Smith" required>
@@ -368,8 +368,10 @@
       <input type="email" name="email" id="email" placeholder="name@email.com" required>
       <label for="message">Message</label>
       <textarea id="message" name="message" placeholder="Your message"></textarea>
-      <input type="submit" value="Send" class="btn btn-full">
-    </form>
+      <div >
+        <button class="btn btn-full" disabled id="submit_contact_request">Send</button>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -417,6 +419,21 @@
 </body>
 <script>
   $(function() {
+    function isEmailValid(email) {
+      /* FIXME: Replace with a better email validator. */
+      return (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email));
+    }
+
+    function updateSendButtonStatus() {
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+
+      var sendButton = document.getElementById('submit_contact_request');
+
+      sendButton.disabled = !(name && email && message && isEmailValid(email));
+    }
+
     /* Scroll on buttons */
     $('.js--scroll-to-services').on('click', function () {
       $('html, body').animate({scrollTop: $('.js--section-services').offset().top}, 1000);
@@ -433,8 +450,44 @@
     $('.js--scroll-to-portfolio').on('click', function () {
       $('html, body').animate({scrollTop: $('.js--section-portfolio').offset().top}, 1000);
     });
+
     $('.js--scroll-to-top').on('click', function () {
       $('html, body').animate({scrollTop: $('.js--section-top').offset().top}, 1000);
+    });
+
+    $('#name').on('keyup', function() {
+      updateSendButtonStatus();
+     });
+    $('#message').on('keyup', function() {
+      updateSendButtonStatus();
+    });
+    $('#email').on('keyup', function() {
+      updateSendButtonStatus();
+    });
+
+    $('#submit_contact_request').on('click', function() {
+      function onSuccess() {
+        /*
+          Show a success message
+          Clear the form
+        */
+        console.log('Your message was sent!');
+      }
+      function onFailure() {
+        console.error('Your message could not be sent');
+      }
+      var contactRequest = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value,
+      };
+      var apiEndpoint = 'https://i2zrmxcfqa.execute-api.ca-central-1.amazonaws.com/contact-us';
+
+      // /* TODO: Check browser support for `fetch`; possibly use `$.post()`. */
+      window.fetch(apiEndpoint, {
+        method: 'POST',
+        body: JSON.stringify(contactRequest),
+      }).then(onSuccess).catch(onFailure);
     });
   });
 </script>
