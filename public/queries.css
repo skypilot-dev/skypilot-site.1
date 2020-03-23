@@ -220,10 +220,7 @@
     margin-bottom: 30px;
   }
   .main-nav {
-    line-height: 200%;
-  }
-  .main-nav li {
-    margin-left: 2%;
+    line-height: 150%;
   }
   .wordmark {
     padding-top: 0.48rem;
@@ -439,6 +436,9 @@
   }
   footer .flexbox img {
     float: none;
+  }
+  .footer__copy {
+    text-align: center;
   }
   .footer__nav,
   .footer__logo-blurb {
