@@ -871,11 +871,16 @@ footer .flexbox {
   text-align: left;
 }
 
-.legal h3{
+.legal h3 {
   color: #E6AD0A;
   padding: 1rem;
   margin-top: 1rem;
   padding-left: 0;
+}
+
+.legal h4 {
+  color: #555555;
+  font-size: 90%;
 }
 
 .legal h6 {
@@ -885,10 +890,6 @@ footer .flexbox {
 
 .legal ul {
   margin-left: 3rem;
-}
-
-.legal p:first-of-type {
-  text-align: center;
 }
 
 .legal p,
