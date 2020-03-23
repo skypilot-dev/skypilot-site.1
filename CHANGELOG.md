@@ -1,3 +1,16 @@
+## [0.1.5](https://github.com/skypilotcc/skypilot-site/compare/v0.1.4-next.3...v0.1.5) (2020-03-23)
+
+
+
+## [0.1.4-next.3](https://github.com/skypilotcc/skypilot-site/compare/v0.1.4-next.2...v0.1.4-next.3) (2020-03-23)
+
+
+### Bug Fixes
+
+* Scheme is missing from LinkedIn URL ([be50a02](https://github.com/skypilotcc/skypilot-site/commit/be50a023d58a638e36cc7f7eeffb9527994e3c14))
+
+
+
 ## [0.1.3](https://github.com/skypilotcc/skypilot-site/compare/v0.1.3-next.0...v0.1.3) (2020-03-17)
 
 
