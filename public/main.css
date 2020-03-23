@@ -853,6 +853,11 @@ footer .flexbox {
   border-bottom: 2px solid #c78f0a;
 }
 
+.footer__nav ion-icon {
+  vertical-align: -0.1rem;
+  padding-left: 0.1rem;
+}
+
 /* ----------------------------------------------------------- */
 /* LEGAL PAGES: TERMS, CONDITIONS, PRIVACY POLICY */
 /* ----------------------------------------------------------- */
