@@ -350,9 +350,9 @@ nav .row {
 /* White header */
 .header--white {
   background-image: none;
-  height: 100px;
+  height: 55px;
   color: #555;
-  min-height: 100px;
+  min-height: 55px;
   margin: 0;
 }
 
