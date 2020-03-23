@@ -781,10 +781,34 @@ nav .row {
 .contact-form textarea {
   height: 100px;
 }
+
+.contact-form div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
 .contact-form button {
-  float: right;
   margin-right: 0;
 }
+
+.contact-form #message-sent {
+ display: none;
+}
+
+.contact-form p {
+  color: green;
+  font-size: 90%;
+  margin-right: 0.2rem;
+}
+
+.contact-form ion-icon {
+  font-size: 120%;
+  color: green;
+  margin-right: 0.2rem;
+}
+
 /* ----------------------------------------------------------- */
 /* FOOTER */
 /* ----------------------------------------------------------- */
