@@ -6,8 +6,7 @@ exports.handler = (event, context, callback) => {
   const params = {
     Destination: {
       ToAddresses: [
-        'camilla@skypilot.dev',
-        'wthorsen@skypilot.dev',
+        'info@skypilot.dev',
       ]
     },
     Message: {
@@ -17,10 +16,10 @@ exports.handler = (event, context, callback) => {
         }
       },
       Subject: {
-        Data: `Contact request from ${body.name} <${body.email}>`
-      }
+        Data: `Contact request from ${body.name} <${body.email}>`,
+      },
     },
-    Source: 'bot@skypilot.dev'
+    Source: 'bot@skypilot.dev',
   };
 
   ses.sendEmail(params, function (err, data) {
