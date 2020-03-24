@@ -19,7 +19,7 @@ Darker grey: #ccc9c4
 html,
 body {
   background-color: #fff;
-  color: #555;
+  color: #222;
   font-family: 'Lato', 'Arial', sans-serif;
   font-size: 20px;
   font-weight: 300;
@@ -84,14 +84,12 @@ h1 {
   color: #fff;
   font-size: 240%;
   word-spacing: 4px;
-  letter-spacing: 1px;
   font-weight: 100;
 }
 
 h2 {
   text-align: center;
   font-size: 180%;
-  word-spacing: 4px;
   font-weight: 300;
   margin-bottom: 30px;
 }
@@ -114,7 +112,6 @@ h5 {
   color: #E6AD0A;
   font-size: 80%;
   letter-spacing: 1px;
-  word-spacing: 3px;
 }
 
 h6 {
@@ -181,7 +178,7 @@ nav div a:active {
   /* ----- BUTTONS ----- */
 .btn:link,
 .btn:visited,
-input[type=submit]{
+button {
   display: inline-block;
   padding: 15px 30px;
   font-weight: 300;
@@ -194,7 +191,7 @@ input[type=submit]{
 
 .btn-full:link,
 .btn-full:visited,
-input[type=submit]{
+button {
   background-color: #dba30a;
   border: 1px solid #dba30a;
   color: #fff;
@@ -209,9 +206,10 @@ input[type=submit]{
 
 .btn:hover,
 .btn:active,
-input[type=submit]:hover,
-input[type=submit]:active {
+button:hover,
+button:active {
   background-color: #c78f0a;
+  cursor: pointer;
 }
 
 .btn-full:hover,
@@ -225,6 +223,17 @@ input[type=submit]:active {
   color: #fff;
 }
 
+button:disabled {
+  border: 1px solid #bababa;
+  color: grey;
+  background-color: white;
+}
+
+button:disabled:hover {
+  background-color: white;
+  border: 1px solid #bababa;
+  cursor: default;
+}
 /* ----------------------------------------------------------- */
 /* HEADER */
 /* ----------------------------------------------------------- */
@@ -268,8 +277,8 @@ nav .row {
 
 .hero-text-box {
   position: absolute;
-  padding: 2%;
-  width: 74%;
+  width: 70%;
+  max-width: 1140px;
   margin: auto;
   top: 50%;
   left: 50%;
@@ -281,7 +290,7 @@ nav .row {
   font-size: 150%;
   position: absolute;
   top: 25%;
-  right: 3%;
+  right: 0;
 }
 
 .hero__social-icons div:nth-child(1),
@@ -290,7 +299,8 @@ nav .row {
 }
 
 .hero__long-copy {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
+  max-width: 40rem;
 }
 
 .hero__scroll {
@@ -509,6 +519,7 @@ nav .row {
 
 .team__social-icons {
   font-size: 150%;
+  margin-right: 0.3rem;
 }
 
 /* ----------------------------------------------------------- */
@@ -769,10 +780,34 @@ nav .row {
 .contact-form textarea {
   height: 100px;
 }
-.contact-form div a.btn-full {
-  float: right;
+
+.contact-form div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.contact-form button {
   margin-right: 0;
 }
+
+.contact-form #message-sent {
+ display: none;
+}
+
+.contact-form p {
+  color: green;
+  font-size: 90%;
+  margin-right: 0.2rem;
+}
+
+.contact-form ion-icon {
+  font-size: 120%;
+  color: green;
+  margin-right: 0.2rem;
+}
+
 /* ----------------------------------------------------------- */
 /* FOOTER */
 /* ----------------------------------------------------------- */
@@ -790,6 +825,10 @@ footer {
   font-size: 140%;
   padding-left: 7px;
   padding-top: 0.05rem;
+}
+
+.wordmark--footer:hover {
+  color: white;
 }
 
 .logo-row {
@@ -820,7 +859,8 @@ footer {
 footer .flexbox {
   justify-content: space-between;
   align-items: flex-start;
-  padding: 0 15%;
+  width: 70%;
+  margin: auto;
 }
 
 /* Footer nav */
@@ -903,3 +943,6 @@ footer .flexbox {
   margin-bottom: 0.7rem;
 }
 
+.legal li {
+  line-height: 140%;
+}
