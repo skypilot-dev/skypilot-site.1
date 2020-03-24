@@ -175,6 +175,10 @@ nav div a:active {
   color: #c78f0a;
 }
 
+.section-team__text a {
+  text-decoration: none;
+}
+
   /* ----- BUTTONS ----- */
 .btn:link,
 .btn:visited,
@@ -511,9 +515,6 @@ nav .row {
 
 .section-team__text--profile2 {
   margin: 20px 0;
-}
-
-.section-team__text--profile2 {
   text-align: right;
 }
 
