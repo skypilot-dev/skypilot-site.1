@@ -2,7 +2,7 @@
   "name": "skypilot-site",
   "description": "SkyPilot website",
   "homepage": "https://github.com/skypilotcc/skypilot-site#readme",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "main": "lib/index.js",
   "author": {
     "email": "camilla@thorsen.dev",
