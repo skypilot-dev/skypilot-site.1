@@ -19,7 +19,7 @@ Darker grey: #ccc9c4
 html,
 body {
   background-color: #fff;
-  color: #555;
+  color: #222;
   font-family: 'Lato', 'Arial', sans-serif;
   font-size: 20px;
   font-weight: 300;
@@ -84,14 +84,12 @@ h1 {
   color: #fff;
   font-size: 240%;
   word-spacing: 4px;
-  letter-spacing: 1px;
   font-weight: 100;
 }
 
 h2 {
   text-align: center;
   font-size: 180%;
-  word-spacing: 4px;
   font-weight: 300;
   margin-bottom: 30px;
 }
@@ -114,7 +112,6 @@ h5 {
   color: #E6AD0A;
   font-size: 80%;
   letter-spacing: 1px;
-  word-spacing: 3px;
 }
 
 h6 {
@@ -946,3 +943,6 @@ footer .flexbox {
   margin-bottom: 0.7rem;
 }
 
+.legal li {
+  line-height: 140%;
+}
