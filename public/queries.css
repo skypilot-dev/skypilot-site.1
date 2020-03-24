@@ -1,3 +1,10 @@
+/* ---------------------- Screen width min 1770 ---------------------- */
+@media only screen and (min-width: 1770px) {
+  .process__foreground .row {
+    max-width: none;
+  }
+}
+
 /* ---------------------- Screen width 948 to 1185 ---------------------- */
 @media only screen and (max-width: 1185px) {
   body {font-size: 18px}
