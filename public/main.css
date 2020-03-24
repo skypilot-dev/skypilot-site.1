@@ -280,8 +280,8 @@ nav .row {
 
 .hero-text-box {
   position: absolute;
-  padding: 2%;
-  width: 74%;
+  width: 70%;
+  max-width: 1140px;
   margin: auto;
   top: 50%;
   left: 50%;
@@ -293,7 +293,7 @@ nav .row {
   font-size: 150%;
   position: absolute;
   top: 25%;
-  right: 3%;
+  right: 0;
 }
 
 .hero__social-icons div:nth-child(1),
@@ -302,7 +302,8 @@ nav .row {
 }
 
 .hero__long-copy {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
+  max-width: 40rem;
 }
 
 .hero__scroll {
@@ -861,7 +862,8 @@ footer {
 footer .flexbox {
   justify-content: space-between;
   align-items: flex-start;
-  padding: 0 15%;
+  width: 70%;
+  margin: auto;
 }
 
 /* Footer nav */

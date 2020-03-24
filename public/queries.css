@@ -5,18 +5,22 @@
   section {padding: 50px 0}
   nav .row {
     width: 90%;
+    margin: 0 auto;
   }
   header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_1185/v1584555699/splash-banner.jpg);
   }
   .hero-text-box {
     position: absolute;
-    padding: 2%;
-    width: 94%;
+    padding: 2% 0;
+    width: 90%;
     margin: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  .hero__long-copy {
+    max-width: 35rem;
   }
   h1 {
     font-size: 220%;
@@ -210,7 +214,6 @@
     position: relative;
     display: inline-block;
     float: left;
-    margin-left: 4%;
   }
   .hero__social-icons div {
     display: inline-block;
@@ -218,6 +221,7 @@
   }
   .hero__long-copy {
     margin-bottom: 30px;
+    max-width: 30rem;
   }
   .main-nav {
     line-height: 150%;
