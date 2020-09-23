@@ -743,10 +743,10 @@ nav .row {
   left: 68%;
   transform: translate(-50%, -50%);
   margin: 0 auto;
+  padding: 40px 30px;
   width: 500px;
   background-color: #f3f3f3;
-  border: 1px solid #787878;
-  padding: 40px 30px;
+  border: 1px solid lightgray;
 }
 
 .contact-form {
@@ -775,6 +775,7 @@ nav .row {
   font-weight: 300;
   padding: 5px;
   resize: none;
+  border: 1px solid lightgray;
 }
 
 .contact-form textarea {
