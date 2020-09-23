@@ -792,7 +792,9 @@ nav .row {
 .contact-form button {
   margin-right: 0;
 }
-
+.contact-form button:disabled {
+  background-color: #e9e9e9;
+}
 .contact-form #message-sent {
  display: none;
 }
