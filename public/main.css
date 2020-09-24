@@ -16,6 +16,10 @@ Darker grey: #ccc9c4
   box-sizing: border-box;
 }
 
+body {
+  min-width: 380px;
+}
+
 html,
 body {
   background-color: #fff;
