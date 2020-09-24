@@ -15,7 +15,7 @@
     margin: 0 auto;
   }
   header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_1185/v1584555699/splash-banner.jpg);
+    background-image: linear-gradient(rgba(30, 51, 86, 0.71), rgba(0, 0, 0, 0.2)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_1185/v1584555699/splash-banner.jpg);
   }
   .hero-text-box {
     position: absolute;
@@ -30,7 +30,7 @@
     max-width: 35rem;
   }
   h1 {
-    font-size: 220%;
+    font-size: 2.6rem;
     margin-bottom: 25px;
   }
   h2 {
@@ -88,7 +88,10 @@
 /* ---------------------- Screen width 768px to 947px ---------------------- */
 @media only screen and (max-width: 947px) {
   header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_947/v1584555699/splash-banner.jpg);
+    background-image: linear-gradient(rgba(30, 51, 86, 0.71), rgba(0, 0, 0, 0.2)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_947/v1584555699/splash-banner.jpg);
+  }
+  h1 {
+    font-size: 2.1rem;
   }
   h5 {
     margin: 5px 0;
@@ -189,7 +192,7 @@
     width: 100%;
   }
   h1 {
-    font-size: 200%;
+    font-size: 1.65rem;
     margin-bottom: 20px;
   }
   h2 {
@@ -205,7 +208,7 @@
   header {
     height: 70vh;
     margin: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_767/v1584555699/splash-banner.jpg);
+    background-image: linear-gradient(rgba(30, 51, 86, 0.71), rgba(0, 0, 0, 0.2)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_767/v1584555699/splash-banner.jpg);
   }
   nav .row {
     width: 92%;
@@ -501,8 +504,12 @@
 
 /* ---------------------- Screen width 0px to 479px ---------------------- */
 @media only screen and (max-width: 479px) {
+  h1 {
+    font-size: 1.8rem;
+  }
   header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_479/v1584555699/splash-banner.jpg);
+    background-image: linear-gradient(rgba(30, 51, 86, 0.71), rgba(0, 0, 0, 0.2)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_479/v1584555699/splash-banner.jpg);
+    height: 96vh;
   }
   .wordmark {
     padding-top: 0.4rem;

@@ -22,8 +22,8 @@
     "url": "https://github.com/skypilotcc/skypilot-site/issues"
   },
   "devDependencies": {
-    "@skypilot/toolchain": "^3.5.8",
-    "@types/jquery": "^3.3.33",
+    "@skypilot/toolchain": "^5.0.2",
+    "@types/jquery": "^3.5.1",
     "live-server": "^1.2.1"
   },
   "files": [
