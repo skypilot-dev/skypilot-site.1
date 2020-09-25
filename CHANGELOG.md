@@ -1,8 +1,13 @@
-## [0.1.10](https://github.com/skypilotcc/skypilot-site/compare/v0.1.10-next.0...v0.1.10) (2020-04-19)
+## [0.1.11](https://github.com/skypilotcc/skypilot-site/compare/v0.1.11-next.0...v0.1.11) (2020-09-25)
+
+
+### Bug Fixes
+
+* Contact form text inputs have missing top border ([3455127](https://github.com/skypilotcc/skypilot-site/commit/3455127cb2ca5b4176c61eac7eb506435cf0f8fb))
 
 
 
-## [0.1.10-next.0](https://github.com/skypilotcc/skypilot-site/compare/v0.1.9-next.0...v0.1.10-next.0) (2020-04-19)
+## [0.1.10](https://github.com/skypilotcc/skypilot-site/compare/v0.1.9-next.0...v0.1.10) (2020-04-19)
 
 
 
@@ -22,11 +27,7 @@
 
 
 
-## [0.1.5](https://github.com/skypilotcc/skypilot-site/compare/v0.1.4-next.3...v0.1.5) (2020-03-23)
-
-
-
-## [0.1.4-next.3](https://github.com/skypilotcc/skypilot-site/compare/v0.1.4-next.2...v0.1.4-next.3) (2020-03-23)
+## [0.1.5](https://github.com/skypilotcc/skypilot-site/compare/v0.1.3...v0.1.5) (2020-03-23)
 
 
 ### Bug Fixes
@@ -39,15 +40,7 @@
 
 
 
-## [0.1.2](https://github.com/skypilotcc/skypilot-site/compare/v0.1.1-next.16...v0.1.2) (2020-03-17)
-
-
-
-## [0.1.1-next.8](https://github.com/skypilotcc/skypilot-site/compare/v0.1.1-next.7...v0.1.1-next.8) (2020-03-13)
-
-
-
-## [0.1.1-next.7](https://github.com/skypilotcc/skypilot-site/compare/v0.1.0...v0.1.1-next.7) (2020-03-11)
+## [0.1.2](https://github.com/skypilotcc/skypilot-site/compare/v0.1.0...v0.1.2) (2020-03-17)
 
 
 ### Bug Fixes

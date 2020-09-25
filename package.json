@@ -1,12 +1,20 @@
 {
   "name": "skypilot-site",
+  "version": "0.1.11",
+  "private": true,
   "description": "SkyPilot website",
   "homepage": "https://github.com/skypilotcc/skypilot-site#readme",
-  "version": "0.1.10",
-  "main": "lib/index.js",
+  "bugs": {
+    "url": "https://github.com/skypilotcc/skypilot-site/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/skypilotcc/skypilot-site.git"
+  },
+  "license": "UNLICENSED",
   "author": {
-    "email": "camilla@thorsen.dev",
-    "name": "Camilla Thorsen"
+    "name": "Camilla Thorsen",
+    "email": "camilla@thorsen.dev"
   },
   "contributors": [
     {
@@ -14,18 +22,8 @@
       "email": "william@thorsen.dev"
     }
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/skypilotcc/skypilot-site.git"
-  },
-  "bugs": {
-    "url": "https://github.com/skypilotcc/skypilot-site/issues"
-  },
-  "devDependencies": {
-    "@skypilot/toolchain": "^5.0.2",
-    "@types/jquery": "^3.5.1",
-    "live-server": "^1.2.1"
-  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "/lib"
   ],
@@ -43,10 +41,12 @@
     "test": "jest",
     "typecheck": "tsc"
   },
-  "private": true,
-  "license": "UNLICENSED",
+  "devDependencies": {
+    "@skypilot/toolchain": "^5.0.2",
+    "@types/jquery": "^3.5.1",
+    "live-server": "^1.2.1"
+  },
   "publishConfig": {
     "access": "restricted"
-  },
-  "types": "lib/index.d.ts"
+  }
 }
