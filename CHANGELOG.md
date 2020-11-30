@@ -1,3 +1,7 @@
+## [0.1.13](https://github.com/skypilotcc/skypilot-site/compare/v0.1.13-next.0...v0.1.13) (2020-11-30)
+
+
+
 ## [0.1.12](https://github.com/skypilotcc/skypilot-site/compare/v0.1.12-next.0...v0.1.12) (2020-09-30)
 
 
