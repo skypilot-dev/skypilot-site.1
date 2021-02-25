@@ -7,13 +7,13 @@ exports.handler = (event, context, callback) => {
     Destination: {
       ToAddresses: [
         'info@skypilot.dev',
-      ]
+      ],
     },
     Message: {
       Body: {
         Text: {
           Data: JSON.stringify(body, undefined, 2),
-        }
+        },
       },
       Subject: {
         Data: `Contact request from ${body.name} <${body.email}>`,
@@ -23,7 +23,7 @@ exports.handler = (event, context, callback) => {
   };
 
   ses.sendEmail(params, function (err, data) {
-    callback(null, { err: err, data: data });
+    callback(null, { err, data });
     if (err) {
       console.log(err);
       context.fail(err);
