@@ -42,8 +42,8 @@
     "typecheck": "tsc"
   },
   "devDependencies": {
-    "@skypilot/toolchain": "^5.1.1",
-    "@types/jquery": "^3.5.4",
+    "@skypilot/toolchain": "^5.1.4",
+    "@types/jquery": "^3.5.5",
     "live-server": "^1.2.1"
   },
   "publishConfig": {
