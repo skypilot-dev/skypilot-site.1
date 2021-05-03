@@ -38,7 +38,9 @@
     "lint": "eslint --cache '**/*.{js,ts}'",
     "publish:default": "echo 'No publication step. Skipping.'",
     "tc": "yarn run typecheck",
-    "test": "jest",
+    "test": "jest --config jest.standalone.config.js",
+    "test:all": "jest --config jest.config.js",
+    "test:int": "jest --config jest.integration.config.js",
     "typecheck": "tsc"
   },
   "devDependencies": {
