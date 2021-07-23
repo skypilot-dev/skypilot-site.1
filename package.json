@@ -55,5 +55,21 @@
   },
   "publishConfig": {
     "access": "restricted"
+  },
+  "customDistStructure": {
+    "config": {
+      "public": [
+        ".css",
+        ".css.map",
+        ".jpeg",
+        ".jpg",
+        ".png",
+        ".svg"
+      ]
+    }
+  },
+  "staticFiles": {
+    "staticPath": "public",
+    "excludeGlob": "index.html"
   }
 }
