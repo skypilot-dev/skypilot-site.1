@@ -1,14 +1,9 @@
 name: Check code
 
 on:
-  push:
+  pull_request:
     branches-ignore:
-      - 'wip-**'
-      - '**-wip'
-      - 'main'
-      - 'alpha'
-      - 'beta'
-      - 'next'
+      - 'wip/**'
 
 jobs:
   check-code:
@@ -30,6 +25,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.SPQR_GITHUB_PERSONAL_ACCESS_TOKEN || secrets.GITHUB_TOKEN }}
       - name: Fetch
         run: git fetch --prune --unshallow && git fetch origin "$STABLE_RELEASE_BRANCH:$STABLE_RELEASE_BRANCH"
       - name: Use Node.js ${{ matrix.node-version }}
@@ -42,7 +39,7 @@ jobs:
           yarn install --frozen-lockfile --production=false
           yarn add @skypilot/quick-release --production=false
       - name: Check types
-        run: yarn run typecheck
+        run: yarn run check-types
       - name: Lint
         run: yarn run lint --no-cache --quiet
       - name: Test
