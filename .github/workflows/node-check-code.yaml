@@ -1,14 +1,9 @@
 name: Check code
 
 on:
-  push:
+  pull_request:
     branches-ignore:
-      - 'wip-**'
-      - '**-wip'
-      - 'master'
-      - 'alpha'
-      - 'beta'
-      - 'next'
+      - 'wip/**'
 
 jobs:
   check-code:
@@ -16,20 +11,22 @@ jobs:
 
     env:
       CI: true
-      NPM_READ_TOKEN: ${{ secrets.NPM_READ_AND_PUBLISH_TOKEN || secrets.NPM_READ_TOKEN }}
-      STABLE_RELEASE_BRANCH: 'master'
+      NPM_READ_TOKEN: ${{ secrets.NPM_AUTOMATION_TOKEN || secrets.NPM_READ_AND_PUBLISH_TOKEN || secrets.NPM_READ_TOKEN }}
+      STABLE_RELEASE_BRANCH: 'main'
 
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [14.x]
 
     timeout-minutes: 10
 
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.SPQR_GITHUB_PERSONAL_ACCESS_TOKEN || secrets.GITHUB_TOKEN }}
       - name: Fetch
         run: git fetch --prune --unshallow && git fetch origin "$STABLE_RELEASE_BRANCH:$STABLE_RELEASE_BRANCH"
       - name: Use Node.js ${{ matrix.node-version }}
@@ -42,7 +39,7 @@ jobs:
           yarn install --frozen-lockfile --production=false
           yarn add @skypilot/quick-release --production=false
       - name: Check types
-        run: yarn run typecheck
+        run: yarn run check-types
       - name: Lint
         run: yarn run lint --no-cache --quiet
       - name: Test
