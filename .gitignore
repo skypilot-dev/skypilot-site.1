@@ -1,5 +1,6 @@
 # Cached files
 .cache/
+.parcel-cache/
 
 # Compiled & transpiled files
 /dist/
