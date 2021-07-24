@@ -8305,11 +8305,6 @@ pako@~1.0.5:
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
   integrity sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==
 
-parcel-plugin-clean-dist@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/parcel-plugin-clean-dist/-/parcel-plugin-clean-dist-0.0.6.tgz#e3da68aaadc19b258c111fc114fe68e7866bf4fb"
-  integrity sha512-zzPY/ORCzkV+V7nfyYlONLrBithrx6orJjepdBoqqb9myeV9zQZUoBY41i3QkSSnQX7ilGmWDALX2XlxC6z7Fw==
-
 parcel-plugin-custom-dist-structure@^1.1.18:
   version "1.1.18"
   resolved "https://registry.yarnpkg.com/parcel-plugin-custom-dist-structure/-/parcel-plugin-custom-dist-structure-1.1.18.tgz#bf66860cd307b95a78ee1118537b63471dfa6e91"

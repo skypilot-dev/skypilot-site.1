@@ -33,6 +33,7 @@
     "compile-ts": "babel ./src --out-dir ./lib --extensions .ts --ignore '**/__tests__/*' --ignore '**/*.d.ts'",
     "dev": "parcel --open chrome --port 4000 src/index.html",
     "lint": "eslint --cache '**/*.{js,ts}'",
+    "prebuild": "rm -rf dist",
     "publish:default": "echo 'No publication step. Skipping.'",
     "serve": "live-server --browser=chrome --port=4000 dist",
     "test": "jest --config jest.standalone.config.js",
@@ -47,7 +48,6 @@
     "@types/jquery": "^3.5.6",
     "live-server": "^1.2.1",
     "parcel": "^2.0.0-beta.2",
-    "parcel-plugin-clean-dist": "^0.0.6",
     "parcel-plugin-custom-dist-structure": "^1.1.18",
     "postcss": "^8.3.6"
   },
