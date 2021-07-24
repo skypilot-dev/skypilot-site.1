@@ -3,13 +3,13 @@
   "version": "0.1.14",
   "private": true,
   "description": "SkyPilot website",
-  "homepage": "https://github.com/skypilotcc/skypilot-site#readme",
+  "homepage": "https://github.com/skypilot-dev/skypilot-site#readme",
   "bugs": {
-    "url": "https://github.com/skypilotcc/skypilot-site/issues"
+    "url": "https://github.com/skypilot-dev/skypilot-site/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/skypilotcc/skypilot-site.git"
+    "url": "git+ssh://git@github.com/skypilot-dev/skypilot-site.git"
   },
   "license": "UNLICENSED",
   "author": {
@@ -22,23 +22,19 @@
       "email": "william@thorsen.dev"
     }
   ],
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
-  "files": [
-    "/lib"
-  ],
   "scripts": {
     "cb": "yarn run check-build",
     "cc": "yarn run check-code",
     "ct": "yarn run check-types",
-    "build": "echo 'No build step. Skipping.'",
+    "build": "parcel build src/index.html --public-url ./",
     "check-build": "yarn run check-code && yarn run build",
     "check-code": "yarn run check-types && yarn run lint --quiet && yarn test",
     "check-types": "tsc",
     "compile-ts": "babel ./src --out-dir ./lib --extensions .ts --ignore '**/__tests__/*' --ignore '**/*.d.ts'",
-    "dev": "live-server --port=4000 --watch='index.html,public/**' .",
+    "dev": "parcel --open chrome --port 4000 src/index.html",
     "lint": "eslint --cache '**/*.{js,ts}'",
     "publish:default": "echo 'No publication step. Skipping.'",
+    "serve": "live-server --browser=chrome --port=4000 dist",
     "test": "jest --config jest.standalone.config.js",
     "test:all": "jest --config jest.config.js",
     "test:int": "jest --config jest.integration.config.js"
@@ -53,7 +49,6 @@
     "parcel": "^2.0.0-beta.2",
     "parcel-plugin-clean-dist": "^0.0.6",
     "parcel-plugin-custom-dist-structure": "^1.1.18",
-    "parcel-plugin-static-files-copy": "^2.6.0",
     "postcss": "^8.3.6"
   },
   "publishConfig": {
@@ -70,9 +65,5 @@
         ".svg"
       ]
     }
-  },
-  "staticFiles": {
-    "staticPath": "public",
-    "excludeGlob": "index.html"
   }
 }
