@@ -1,6 +1,6 @@
 {
   "name": "skypilot-site",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "private": true,
   "description": "SkyPilot website",
   "homepage": "https://github.com/skypilot-dev/skypilot-site#readme",
@@ -26,6 +26,7 @@
     "cb": "yarn run check-build",
     "cc": "yarn run check-code",
     "ct": "yarn run check-types",
+    "prebuild": "rm -rf dist",
     "build": "parcel build src/index.html --public-url ./",
     "check-build": "yarn run check-code && yarn run build",
     "check-code": "yarn run check-types && yarn run lint --quiet && yarn test",
@@ -33,7 +34,6 @@
     "compile-ts": "babel ./src --out-dir ./lib --extensions .ts --ignore '**/__tests__/*' --ignore '**/*.d.ts'",
     "dev": "parcel --open chrome --port 4000 src/index.html",
     "lint": "eslint --cache '**/*.{js,ts}'",
-    "prebuild": "rm -rf dist",
     "publish:default": "echo 'No publication step. Skipping.'",
     "serve": "live-server --browser=chrome --port=4000 dist",
     "test": "jest --config jest.standalone.config.js",
