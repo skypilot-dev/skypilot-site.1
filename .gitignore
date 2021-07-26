@@ -22,6 +22,9 @@
 /private/
 /secret/
 
+#  Netlify
+/.netlify/
+
 # Node
 /node_modules/
 .lock-wscript

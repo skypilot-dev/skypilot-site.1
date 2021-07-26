@@ -2,5 +2,11 @@
 from = "https://skypilot.netlify.app/*"
 to = "https://www.skypilot.dev/:splat"
 status = "301"
+force = true
+
+[[redirects]]
+from = "http://skypilot.netlify.app/*"
+to = "https://www.skypilot.dev/:splat"
+status = "301"
 # Do this redirect even if the page exists
 force = true
