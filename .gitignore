@@ -62,3 +62,6 @@ yarn-error.log*
 
 # Allow .gitkeep to prevent otherwise empty directories from being deleted
 !.gitkeep
+
+# Local Netlify folder
+.netlify
