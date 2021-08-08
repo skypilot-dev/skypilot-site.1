@@ -1,4 +1,21 @@
-## [0.1.16](https://github.com/skypilot-dev/skypilot-site/compare/v0.1.15...v0.1.16) (2021-07-24)
+## [0.1.17](https://github.com/skypilot-dev/skypilot-site/compare/v0.1.17-next.2...v0.1.17) (2021-08-08)
+
+
+
+## [0.1.17-next.2](https://github.com/skypilot-dev/skypilot-site/compare/v0.1.17-next.1...v0.1.17-next.2) (2021-08-08)
+
+
+
+## [0.1.17-next.1](https://github.com/skypilot-dev/skypilot-site/compare/v0.1.17-next.0...v0.1.17-next.1) (2021-08-08)
+
+
+### Bug Fixes
+
+* String value for status breaks redirect ([7f4d308](https://github.com/skypilot-dev/skypilot-site/commit/7f4d308867082cca5d4ed96703c99eb1dd5db233))
+
+
+
+## [0.1.16-next.1](https://github.com/skypilot-dev/skypilot-site/compare/v0.1.16...v0.1.16-next.1) (2021-07-24)
 
 
 
