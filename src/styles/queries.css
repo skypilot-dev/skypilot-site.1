@@ -15,7 +15,7 @@
     margin: 0 auto;
   }
   header {
-    background-image: linear-gradient(rgba(30, 51, 86, 0.71), rgba(0, 0, 0, 0.2)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_1185/v1584555699/splash-banner.jpg);
+    background-image: linear-gradient(rgba(30, 51, 86, 0.71), rgba(0, 0, 0, 0.2)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,h_1185/v1627952629/SkyPilot/ekrem-osmanoglu-55uDR4125nM-unsplash_nlgfpg.jpg);
   }
   .hero-text-box {
     position: absolute;
@@ -76,7 +76,7 @@
   }
 
   .section-contact {
-    background-image:  linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_1185/v1584567048/white-clouds.jpg);
+    background-image:  linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,a_hflip,w_1185/v1628312299/SkyPilot/samsommer-vddccTqwal8-unsplash_ht8kco.jpg);
   }
   /* FOOTER SECTION */
   footer .flexbox {
@@ -88,7 +88,7 @@
 /* ---------------------- Screen width 768px to 947px ---------------------- */
 @media only screen and (max-width: 947px) {
   header {
-    background-image: linear-gradient(rgba(30, 51, 86, 0.71), rgba(0, 0, 0, 0.2)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_947/v1584555699/splash-banner.jpg);
+    background-image: linear-gradient(rgba(30, 51, 86, 0.71), rgba(0, 0, 0, 0.2)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,h_947/v1627952629/SkyPilot/ekrem-osmanoglu-55uDR4125nM-unsplash_nlgfpg.jpg);
   }
   h1 {
     font-size: 2.1rem;
@@ -160,7 +160,7 @@
 
   /* CONTACT SECTION */
   .section-contact {
-    background-image:  linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_947/v1584567048/white-clouds.jpg);
+    background-image:  linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,a_hflip,w_947/v1628312299/SkyPilot/samsommer-vddccTqwal8-unsplash_ht8kco.jpg);
   }
   .contact__card {
     left: 60%;
@@ -208,7 +208,7 @@
   header {
     height: 70vh;
     margin: 0;
-    background-image: linear-gradient(rgba(30, 51, 86, 0.71), rgba(0, 0, 0, 0.2)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_767/v1584555699/splash-banner.jpg);
+    background-image: linear-gradient(rgba(30, 51, 86, 0.71), rgba(0, 0, 0, 0.2)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,h_767/v1627952629/SkyPilot/ekrem-osmanoglu-55uDR4125nM-unsplash_nlgfpg.jpg);
   }
   nav .row {
     width: 92%;
@@ -434,7 +434,7 @@
   /* CONTACT SECTION */
   .section-contact {
     width: 100%;
-    background-image:  linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_767/v1584567048/white-clouds.jpg);
+    background-image:  linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,a_hflip,w_767/v1628312299/SkyPilot/samsommer-vddccTqwal8-unsplash_ht8kco.jpg);
   }
   /* FOOTER SECTION */
   footer .flexbox {
@@ -484,7 +484,7 @@
   .section-contact {
     margin: 80px 0 0 0;
     height: 60vh;
-    background-image:  linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_705/v1584567048/white-clouds.jpg);
+    background-image:  linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,a_hflip,w_705/v1628312299/SkyPilot/samsommer-vddccTqwal8-unsplash_ht8kco.jpg);
   }
   .contact__card {
     margin: 0 auto;
@@ -508,7 +508,7 @@
     font-size: 1.8rem;
   }
   header {
-    background-image: linear-gradient(rgba(30, 51, 86, 0.71), rgba(0, 0, 0, 0.2)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_479/v1584555699/splash-banner.jpg);
+    background-image: linear-gradient(rgba(30, 51, 86, 0.71), rgba(0, 0, 0, 0.2)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,h_479/v1627952629/SkyPilot/ekrem-osmanoglu-55uDR4125nM-unsplash_nlgfpg.jpg);
     height: 96vh;
   }
   .wordmark {
@@ -521,7 +521,7 @@
     margin: 80px 0 0 0;
     height: 400px;
     width: 100%;
-    background-image:  linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_479/v1584567048/white-clouds.jpg);
+    background-image:  linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,a_hflip,w_479/v1628312299/SkyPilot/samsommer-vddccTqwal8-unsplash_ht8kco.jpg);
   }
   .contact__card {
     margin: 0 auto;
